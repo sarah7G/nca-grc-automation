@@ -1,0 +1,91 @@
+{
+  "source": "data/CybAttT_df_m.csv",
+  "preparation": {
+    "n_labeled": 36080,
+    "n_without_majority": 9,
+    "n_after_dedup": 31434,
+    "class_counts": {
+      "high_risk_news": 641,
+      "normal_news": 3151,
+      "not_news": 27642
+    }
+  },
+  "agreement": {
+    "fleiss_majority_labeled": 0.9161336390658342,
+    "pairwise_cohen": {
+      "anottator1|anottator2": 0.918399389520246,
+      "anottator1|anottator3": 0.8845017914247255,
+      "anottator2|anottator3": 0.9460603859928197
+    }
+  },
+  "classification": {
+    "n_train": 22003,
+    "n_val": 4715,
+    "n_test": 4716,
+    "majority_baseline_macro_f1": 0.3119335063372071,
+    "logreg": {
+      "macro_f1": 0.8652925616167818,
+      "auc_ovr_macro": 0.9883178455392528,
+      "per_class_f1": {
+        "high_risk_news": 0.7745664739884393,
+        "normal_news": 0.8365591397849462,
+        "not_news": 0.9847520710769601
+      },
+      "confusion_matrix": [
+        [
+          67,
+          23,
+          6
+        ],
+        [
+          9,
+          389,
+          75
+        ],
+        [
+          1,
+          45,
+          4101
+        ]
+      ],
+      "C": 10
+    },
+    "xgboost": {
+      "macro_f1": 0.8523590151800221,
+      "auc_ovr_macro": 0.9866553288189636,
+      "per_class_f1": {
+        "high_risk_news": 0.7590361445783133,
+        "normal_news": 0.8158192090395481,
+        "not_news": 0.982221691922205
+      },
+      "confusion_matrix": [
+        [
+          63,
+          21,
+          12
+        ],
+        [
+          6,
+          361,
+          106
+        ],
+        [
+          1,
+          30,
+          4116
+        ]
+      ],
+      "high_risk_recall": 0.65625,
+      "high_risk_hits": "63 of 96",
+      "cv5_fold_macro_f1": [
+        0.8276836139763342,
+        0.839130014651369,
+        0.8552955271276595,
+        0.8365520305439388,
+        0.8657538869674871
+      ],
+      "cv5_mean": 0.8448830146533577,
+      "cv5_sd": 0.013728331406862634
+    }
+  }
+}

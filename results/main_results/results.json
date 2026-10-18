@@ -1,0 +1,592 @@
+{
+  "config": {
+    "seed": 42,
+    "n_tweets": 48760,
+    "n_orgs": 200,
+    "out": "results",
+    "controls": "controls.csv",
+    "tweets_csv": null,
+    "quick": false,
+    "tweets_source": "synthetic"
+  },
+  "environment": {
+    "python": "3.12.3",
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "scikit_learn": "1.8.0",
+    "xgboost": "3.4.1"
+  },
+  "layer1": {
+    "extraction": {
+      "n_records": 148,
+      "n_controls_level3": 52,
+      "n_subcontrols_level4": 96,
+      "official_controls": 114,
+      "official_subcontrols": 105,
+      "control_recall_pct": 45.6140350877193,
+      "subcontrol_recall_pct": 91.42857142857143,
+      "subdomains_covered": 29,
+      "subdomains_official": 29,
+      "records_with_inline_ids_(merged_controls)": 41,
+      "records_whose_pdf_domain_is_page_header": 101,
+      "median_text_chars": 97.0,
+      "max_text_chars": 3100,
+      "note": "Precision of the control ids (reported as 100% in the thesis notes) needs the source PDF / a hand-annotated gold file and cannot be recomputed from controls.csv alone."
+    },
+    "domain_table": [
+      {
+        "simulated_domain": "governance",
+        "arabic": "الحوكمة",
+        "ecc_subdomain_codes": "1-1, 1-2, 1-3, 1-4",
+        "ecc_subdomain_names": "Cybersecurity Strategy; Cybersecurity Management; Cybersecurity Policies and Procedures; Cybersecurity Roles and Responsibilities",
+        "n_controls_in_kb": 6
+      },
+      {
+        "simulated_domain": "risk management",
+        "arabic": "إدارة المخاطر",
+        "ecc_subdomain_codes": "1-5",
+        "ecc_subdomain_names": "Cybersecurity Risk Management",
+        "n_controls_in_kb": 6
+      },
+      {
+        "simulated_domain": "asset management",
+        "arabic": "إدارة الأصول",
+        "ecc_subdomain_codes": "2-1",
+        "ecc_subdomain_names": "Asset Management",
+        "n_controls_in_kb": 1
+      },
+      {
+        "simulated_domain": "access control",
+        "arabic": "التحكم بالوصول",
+        "ecc_subdomain_codes": "2-2",
+        "ecc_subdomain_names": "Identity and Access Management",
+        "n_controls_in_kb": 6
+      },
+      {
+        "simulated_domain": "cryptography",
+        "arabic": "التشفير",
+        "ecc_subdomain_codes": "2-8",
+        "ecc_subdomain_names": "Cryptography",
+        "n_controls_in_kb": 6
+      },
+      {
+        "simulated_domain": "network security",
+        "arabic": "أمن الشبكات",
+        "ecc_subdomain_codes": "2-5",
+        "ecc_subdomain_names": "Networks Security Management",
+        "n_controls_in_kb": 10
+      },
+      {
+        "simulated_domain": "vulnerability management",
+        "arabic": "إدارة الثغرات",
+        "ecc_subdomain_codes": "2-10",
+        "ecc_subdomain_names": "Vulnerabilities Management",
+        "n_controls_in_kb": 6
+      },
+      {
+        "simulated_domain": "logging and monitoring",
+        "arabic": "المراقبة والسجلات",
+        "ecc_subdomain_codes": "2-12",
+        "ecc_subdomain_names": "Cybersecurity Event Logs and Monitoring Management",
+        "n_controls_in_kb": 6
+      },
+      {
+        "simulated_domain": "incident response",
+        "arabic": "الاستجابة للحوادث",
+        "ecc_subdomain_codes": "2-13",
+        "ecc_subdomain_names": "Cybersecurity Incident and Threats Management",
+        "n_controls_in_kb": 6
+      },
+      {
+        "simulated_domain": "business continuity",
+        "arabic": "استمرارية الأعمال",
+        "ecc_subdomain_codes": "3-1",
+        "ecc_subdomain_names": "Cybersecurity Resilience Aspects of Business Continuity Management",
+        "n_controls_in_kb": 5
+      },
+      {
+        "simulated_domain": "third-party security",
+        "arabic": "أمن الأطراف الثالثة",
+        "ecc_subdomain_codes": "4-1",
+        "ecc_subdomain_names": "Third-Party Cybersecurity",
+        "n_controls_in_kb": 6
+      },
+      {
+        "simulated_domain": "security awareness",
+        "arabic": "التوعية الأمنية",
+        "ecc_subdomain_codes": "1-10",
+        "ecc_subdomain_names": "Cybersecurity Awareness and Training Program",
+        "n_controls_in_kb": 10
+      }
+    ],
+    "linking": {
+      "n_kb_records": 148,
+      "word_tfidf": {
+        "vectorizer": "word",
+        "n_posts": 3658,
+        "accuracy_top1_all": 0.3969382176052488,
+        "accuracy_top3_all": 0.5399125205030071,
+        "n_posts_with_domain_name": 2559,
+        "accuracy_top1_posts_with_domain_name": 0.5005861664712778,
+        "accuracy_top1_posts_without_domain_name": 0.15559599636032756,
+        "share_posts_with_zero_similarity": 0.002733734281027884,
+        "chance_level": 0.08333333333333333
+      },
+      "char_tfidf": {
+        "vectorizer": "char",
+        "n_posts": 3658,
+        "accuracy_top1_all": 0.5215965008201203,
+        "accuracy_top3_all": 0.6451612903225806,
+        "n_posts_with_domain_name": 2559,
+        "accuracy_top1_posts_with_domain_name": 0.6357952325127003,
+        "accuracy_top1_posts_without_domain_name": 0.2556869881710646,
+        "share_posts_with_zero_similarity": 0.0,
+        "chance_level": 0.08333333333333333
+      },
+      "kb_restricted_to_12_domains": {
+        "n_kb_records": 74,
+        "word_tfidf": {
+          "vectorizer": "word",
+          "n_posts": 3658,
+          "accuracy_top1_all": 0.432750136686714,
+          "accuracy_top3_all": 0.5978676872607982,
+          "n_posts_with_domain_name": 2559,
+          "accuracy_top1_posts_with_domain_name": 0.5373192653380227,
+          "accuracy_top1_posts_without_domain_name": 0.18926296633303002,
+          "share_posts_with_zero_similarity": 0.00683433570256971,
+          "chance_level": 0.08333333333333333
+        }
+      }
+    }
+  },
+  "classifier": {
+    "n_train": 34132,
+    "n_val": 7314,
+    "n_test": 7314,
+    "rule_baseline": {
+      "macro_f1": 0.775756830283529
+    },
+    "logreg": {
+      "macro_f1": 0.8342611721614789,
+      "macro_precision": 0.8350296128366467,
+      "macro_recall": 0.8337909554964128,
+      "per_class_f1": {
+        "compliant": 0.8444784103935804,
+        "non_compliant": 0.8434731246308328,
+        "neutral": 0.8148319814600232
+      },
+      "per_class_precision": {
+        "compliant": 0.8302028549962435,
+        "non_compliant": 0.8479809976247031,
+        "neutral": 0.8269049858889934
+      },
+      "per_class_recall": {
+        "compliant": 0.859253499222395,
+        "non_compliant": 0.8390129259694477,
+        "neutral": 0.8031064412973961
+      },
+      "auc_ovr_macro": 0.9729409745509899,
+      "C": 0.3
+    },
+    "xgboost": {
+      "macro_f1": 0.8267586771408849,
+      "macro_precision": 0.8284651740550285,
+      "macro_recall": 0.8258547226065526,
+      "per_class_f1": {
+        "compliant": 0.8392619364656648,
+        "non_compliant": 0.8375268188024185,
+        "neutral": 0.8034872761545712
+      },
+      "per_class_precision": {
+        "compliant": 0.8216014897579144,
+        "non_compliant": 0.8341103341103341,
+        "neutral": 0.829683698296837
+      },
+      "per_class_recall": {
+        "compliant": 0.8576982892690513,
+        "non_compliant": 0.8409714061887975,
+        "neutral": 0.7788944723618091
+      },
+      "auc_ovr_macro": 0.9711432007036157,
+      "f1_gain_over_rule_baseline_pp": 5.100184685735587,
+      "confusion_matrix": [
+        [
+          2206,
+          204,
+          162
+        ],
+        [
+          218,
+          2147,
+          188
+        ],
+        [
+          261,
+          223,
+          1705
+        ]
+      ],
+      "cv5_fold_macro_f1": [
+        0.8286290475369432,
+        0.8216683260865958,
+        0.8180322453711834,
+        0.830664238482773,
+        0.8277863608683406
+      ],
+      "cv5_macro_f1_mean": 0.8253560436691671,
+      "cv5_macro_f1_sd": 0.004733565477832202
+    }
+  },
+  "audit_simulation": {
+    "n_orgs": 200,
+    "n_events": 2268,
+    "T": 365,
+    "sigma_obs": 0.02,
+    "gap_threshold_tau": 0.1
+  },
+  "drift_and_mttd": {
+    "n_val_orgs": 30,
+    "n_test_orgs": 30,
+    "far_constraint_met_on_validation": true,
+    "cusum_k": 2.0,
+    "cusum_h": 20,
+    "drift_detector_test": {
+      "recall": 1.0,
+      "false_alarms_per_series_year": 0.04722222222222222,
+      "fpr_series_level": 0.0594059405940594
+    },
+    "n_test_events": 344,
+    "mttd_by_audit_cycle": {
+      "90": {
+        "audit_cycle_days": 90,
+        "audit_detection_rate": 0.6308139534883721,
+        "pipeline_detection_rate": 1.0,
+        "n_paired_events": 217,
+        "mttd_pipeline_days_paired": 9.12442396313364,
+        "mttd_audit_days_paired": 36.73732718894009,
+        "mttd_reduction_pct": 75.16307074761666,
+        "reduction_ci95_pct": [
+          72.38613535501189,
+          77.49713480030555
+        ],
+        "mttd_pipeline_days_all": 9.26453488372093,
+        "mttd_audit_days_all": 38.51453488372093,
+        "mttd_reduction_pct_all": 75.94535436636727,
+        "reduction_ci95_pct_all": [
+          74.11799777914675,
+          77.56271961935906
+        ]
+      },
+      "180": {
+        "audit_cycle_days": 180,
+        "audit_detection_rate": 0.3023255813953488,
+        "pipeline_detection_rate": 1.0,
+        "n_paired_events": 104,
+        "mttd_pipeline_days_paired": 8.788461538461538,
+        "mttd_audit_days_paired": 37.26923076923077,
+        "mttd_reduction_pct": 76.41898864809082,
+        "reduction_ci95_pct": [
+          72.94574731027876,
+          79.14028168439933
+        ],
+        "mttd_pipeline_days_all": 9.26453488372093,
+        "mttd_audit_days_all": 48.69767441860465,
+        "mttd_reduction_pct_all": 80.975405921681,
+        "reduction_ci95_pct_all": [
+          79.70494000027401,
+          82.24717597051591
+        ]
+      },
+      "365": {
+        "audit_cycle_days": 365,
+        "audit_detection_rate": 0.15988372093023256,
+        "pipeline_detection_rate": 1.0,
+        "n_paired_events": 55,
+        "mttd_pipeline_days_paired": 9.309090909090909,
+        "mttd_audit_days_paired": 41.945454545454545,
+        "mttd_reduction_pct": 77.80667533593412,
+        "reduction_ci95_pct": [
+          72.91701675653344,
+          81.6751895823151
+        ],
+        "mttd_pipeline_days_all": 9.26453488372093,
+        "mttd_audit_days_all": 54.31686046511628,
+        "mttd_reduction_pct_all": 82.94353759700294,
+        "reduction_ci95_pct_all": [
+          81.98150678903073,
+          83.78687856936277
+        ]
+      }
+    }
+  },
+  "detector_comparison": {
+    "fixed": {
+      "label": "Fixed-threshold alert",
+      "params": {
+        "delta": 0.12
+      },
+      "budget_met_on_validation": true,
+      "recall": 1.0,
+      "false_alarms_per_series_year": 0.044444444444444446,
+      "fpr_series_level": 0.0594059405940594,
+      "mttd_days_all": 6.186046511627907,
+      "mttd_days_detected_only": 6.186046511627907,
+      "reduction_vs_180d_pct": 87.29703915950334,
+      "reduction_ci95_pct": [
+        86.37788976358505,
+        88.19484123990931
+      ],
+      "n_test_events": 344
+    },
+    "ewma": {
+      "label": "EWMA control chart",
+      "params": {
+        "lam": 0.3,
+        "L": 8.0
+      },
+      "budget_met_on_validation": false,
+      "recall": 1.0,
+      "false_alarms_per_series_year": 0.11666666666666667,
+      "fpr_series_level": 0.1485148514851485,
+      "mttd_days_all": 6.665697674418604,
+      "mttd_days_detected_only": 6.665697674418604,
+      "reduction_vs_180d_pct": 86.31208213944603,
+      "reduction_ci95_pct": [
+        85.35062477706995,
+        87.25037844633775
+      ],
+      "n_test_events": 344
+    },
+    "cusum": {
+      "label": "CUSUM",
+      "params": {
+        "k": 2.0,
+        "h": 20
+      },
+      "budget_met_on_validation": true,
+      "recall": 1.0,
+      "false_alarms_per_series_year": 0.04722222222222222,
+      "fpr_series_level": 0.0594059405940594,
+      "mttd_days_all": 9.26453488372093,
+      "mttd_days_detected_only": 9.26453488372093,
+      "reduction_vs_180d_pct": 80.975405921681,
+      "reduction_ci95_pct": [
+        79.70494000027401,
+        82.24717597051591
+      ],
+      "n_test_events": 344
+    }
+  },
+  "sensitivity_cusum": {
+    "0.05|0.01": {
+      "mag": 0.05,
+      "noise_sd": 0.01,
+      "recall": 0.6980069324090121,
+      "mttd_days_all": 34.3630849220104,
+      "false_alarms_per_series_year": 0.3254166666666667,
+      "n_events": 2308
+    },
+    "0.05|0.02": {
+      "mag": 0.05,
+      "noise_sd": 0.02,
+      "recall": 0.422360248447205,
+      "mttd_days_all": 47.46761313220941,
+      "false_alarms_per_series_year": 0.04625,
+      "n_events": 2254
+    },
+    "0.05|0.04": {
+      "mag": 0.05,
+      "noise_sd": 0.04,
+      "recall": 0.03460837887067395,
+      "mttd_days_all": 62.189435336976324,
+      "false_alarms_per_series_year": 0.0,
+      "n_events": 2196
+    },
+    "0.05|0.08": {
+      "mag": 0.05,
+      "noise_sd": 0.08,
+      "recall": 0.0,
+      "mttd_days_all": 62.754039497307005,
+      "false_alarms_per_series_year": 0.0,
+      "n_events": 2228
+    },
+    "0.1|0.01": {
+      "mag": 0.1,
+      "noise_sd": 0.01,
+      "recall": 0.9845132743362832,
+      "mttd_days_all": 15.394690265486725,
+      "false_alarms_per_series_year": 0.33625,
+      "n_events": 2260
+    },
+    "0.1|0.02": {
+      "mag": 0.1,
+      "noise_sd": 0.02,
+      "recall": 0.9422548120989918,
+      "mttd_days_all": 21.354720439963337,
+      "false_alarms_per_series_year": 0.05291666666666667,
+      "n_events": 2182
+    },
+    "0.1|0.04": {
+      "mag": 0.1,
+      "noise_sd": 0.04,
+      "recall": 0.5050196420776953,
+      "mttd_days_all": 44.97293758184199,
+      "false_alarms_per_series_year": 0.0,
+      "n_events": 2291
+    },
+    "0.1|0.08": {
+      "mag": 0.1,
+      "noise_sd": 0.08,
+      "recall": 0.009657594381035996,
+      "mttd_days_all": 62.40913081650571,
+      "false_alarms_per_series_year": 0.0,
+      "n_events": 2278
+    },
+    "0.15|0.01": {
+      "mag": 0.15,
+      "noise_sd": 0.01,
+      "recall": 0.9995507637017071,
+      "mttd_days_all": 10.414195867026056,
+      "false_alarms_per_series_year": 0.3595833333333333,
+      "n_events": 2226
+    },
+    "0.15|0.02": {
+      "mag": 0.15,
+      "noise_sd": 0.02,
+      "recall": 0.9981768459434822,
+      "mttd_days_all": 13.193254329990884,
+      "false_alarms_per_series_year": 0.050416666666666665,
+      "n_events": 2194
+    },
+    "0.15|0.04": {
+      "mag": 0.15,
+      "noise_sd": 0.04,
+      "recall": 0.9251881363435148,
+      "mttd_days_all": 23.87516600265604,
+      "false_alarms_per_series_year": 0.0008333333333333334,
+      "n_events": 2259
+    },
+    "0.15|0.08": {
+      "mag": 0.15,
+      "noise_sd": 0.08,
+      "recall": 0.15865384615384615,
+      "mttd_days_all": 57.93050699300699,
+      "false_alarms_per_series_year": 0.0,
+      "n_events": 2288
+    },
+    "0.25|0.01": {
+      "mag": 0.25,
+      "noise_sd": 0.01,
+      "recall": 1.0,
+      "mttd_days_all": 7.65356820234869,
+      "false_alarms_per_series_year": 0.32375,
+      "n_events": 2214
+    },
+    "0.25|0.02": {
+      "mag": 0.25,
+      "noise_sd": 0.02,
+      "recall": 1.0,
+      "mttd_days_all": 9.29269366197183,
+      "false_alarms_per_series_year": 0.0425,
+      "n_events": 2272
+    },
+    "0.25|0.04": {
+      "mag": 0.25,
+      "noise_sd": 0.04,
+      "recall": 1.0,
+      "mttd_days_all": 13.476778866638261,
+      "false_alarms_per_series_year": 0.0008333333333333334,
+      "n_events": 2347
+    },
+    "0.25|0.08": {
+      "mag": 0.25,
+      "noise_sd": 0.08,
+      "recall": 0.875,
+      "mttd_days_all": 28.1875,
+      "false_alarms_per_series_year": 0.0,
+      "n_events": 2208
+    },
+    "0.4|0.01": {
+      "mag": 0.4,
+      "noise_sd": 0.01,
+      "recall": 1.0,
+      "mttd_days_all": 5.73968253968254,
+      "false_alarms_per_series_year": 0.3641666666666667,
+      "n_events": 2205
+    },
+    "0.4|0.02": {
+      "mag": 0.4,
+      "noise_sd": 0.02,
+      "recall": 1.0,
+      "mttd_days_all": 6.965800865800865,
+      "false_alarms_per_series_year": 0.059583333333333335,
+      "n_events": 2310
+    },
+    "0.4|0.04": {
+      "mag": 0.4,
+      "noise_sd": 0.04,
+      "recall": 1.0,
+      "mttd_days_all": 9.730143985137017,
+      "false_alarms_per_series_year": 0.0004166666666666667,
+      "n_events": 2153
+    },
+    "0.4|0.08": {
+      "mag": 0.4,
+      "noise_sd": 0.08,
+      "recall": 0.9986990459670425,
+      "mttd_days_all": 15.221162185602775,
+      "false_alarms_per_series_year": 0.0,
+      "n_events": 2306
+    }
+  },
+  "forecaster": {
+    "h7": {
+      "mae_model": 0.03067522010715483,
+      "mae_moving_avg7": 0.0355975218244481,
+      "mae_persistence": 0.0356725267398838,
+      "improvement_vs_moving_avg_pct": 13.827652783157152,
+      "improvement_vs_persistence_pct": 14.008838423945214,
+      "n_test_windows": 23760
+    },
+    "h14": {
+      "mae_model": 0.04120494714498296,
+      "mae_moving_avg7": 0.04599018201722505,
+      "mae_persistence": 0.04649135905750587,
+      "improvement_vs_moving_avg_pct": 10.404905269672204,
+      "improvement_vs_persistence_pct": 11.370740756328646,
+      "n_test_windows": 23400
+    },
+    "h30": {
+      "mae_model": 0.06254487799633109,
+      "mae_moving_avg7": 0.06533569499867284,
+      "mae_persistence": 0.06648780354036844,
+      "improvement_vs_moving_avg_pct": 4.271504270978433,
+      "improvement_vs_persistence_pct": 5.930298993323468,
+      "n_test_windows": 21960
+    }
+  },
+  "remediation": {
+    "budget_actions_per_episode": 4,
+    "n_test_states": 3000,
+    "mean_total_risk_reduction": {
+      "fixed_order": 0.31701930338047546,
+      "random": 0.3738727441978555,
+      "highest_risk": 0.6199135173169493,
+      "agent": 0.6644990583743942,
+      "oracle": 0.6645835580744792
+    },
+    "compliance_score_gain_points_mean": {
+      "fixed_order": 2.6418275281706283,
+      "random": 3.115606201648796,
+      "highest_risk": 5.165945977641244,
+      "agent": 5.537492153119953,
+      "oracle": 5.538196317287327
+    },
+    "agent_improvement_over_fixed_order_pct": 109.60839017959914,
+    "agent_improvement_over_random_pct": 77.7340201142712,
+    "agent_improvement_over_highest_risk_pct": 7.1922195293330216,
+    "agent_share_of_oracle_pct": 99.98728531588566,
+    "learned_effectiveness_corr_with_truth": 0.999805574810207
+  },
+  "runtime_seconds": 830
+}

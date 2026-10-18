@@ -1,0 +1,28 @@
+{
+ "controls": {
+  "gold": 114,
+  "extracted": 52,
+  "TP": 52,
+  "FP": 0,
+  "FN": 62,
+  "precision_id": 1.0,
+  "recall_id": 0.45614035087719296,
+  "mean_token_f1_matched": 0.6160921716317724,
+  "exact_text_match": 11,
+  "matched": 52,
+  "token_f1_ge_0.9": 11
+ },
+ "sub-controls": {
+  "gold": 105,
+  "extracted": 96,
+  "TP": 96,
+  "FP": 0,
+  "FN": 9,
+  "precision_id": 1.0,
+  "recall_id": 0.9142857142857143,
+  "mean_token_f1_matched": 0.8998770389173173,
+  "exact_text_match": 64,
+  "matched": 96,
+  "token_f1_ge_0.9": 76
+ }
+}

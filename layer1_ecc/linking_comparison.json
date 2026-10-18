@@ -1,0 +1,22 @@
+{
+ "baseline_kb": {
+  "n_kb": 148,
+  "word_top1": 0.3969382176052488,
+  "word_top1_no_domain_name": 0.15559599636032756,
+  "char_top1": 0.5215965008201203,
+  "char_top3": 0.6451612903225806,
+  "char_top1_with_name": 0.6357952325127003,
+  "char_top1_no_name": 0.2556869881710646,
+  "n_posts": 3658
+ },
+ "coordinate_kb": {
+  "n_kb": 219,
+  "word_top1": 0.4062329141607436,
+  "word_top1_no_domain_name": 0.15559599636032756,
+  "char_top1": 0.4934390377255331,
+  "char_top3": 0.6282121377802078,
+  "char_top1_with_name": 0.6100039077764752,
+  "char_top1_no_name": 0.22202001819836215,
+  "n_posts": 3658
+ }
+}

@@ -1,0 +1,1316 @@
+[
+ {
+  "control_id": "1-1-1",
+  "level": 3,
+  "page": 14,
+  "text": "A cybersecurity strategy must be defined, documented and approved. It must be supported by the head of the organization or his/her delegate (referred to in this document as Authorizing Official). The strategy goals must be in-line with related laws and regulations."
+ },
+ {
+  "control_id": "1-1-2",
+  "level": 3,
+  "page": 14,
+  "text": "A roadmap must be executed to implement the cybersecurity strategy."
+ },
+ {
+  "control_id": "1-1-3",
+  "level": 3,
+  "page": 14,
+  "text": "The cybersecurity strategy must be reviewed periodically according to planned intervals or upon changes to related laws and regulations."
+ },
+ {
+  "control_id": "1-2-1",
+  "level": 3,
+  "page": 14,
+  "text": "A dedicated cybersecurity function (e.g., division, department) must be established within the organization. This function must be independent from the Information Technology/Information Communication and Technology (IT/ICT) functions (as per the Royal Decree number 37140 dated 14/8/1438H). It is highly recommended that this cybersecurity function reports directly to the head of the organization or his/her delegate while ensuring that this does not result in a conflict of interest."
+ },
+ {
+  "control_id": "1-2-2",
+  "level": 3,
+  "page": 14,
+  "text": "The position of cybersecurity function head (e.g., CISO), and related supervisory and critical positions within the function, must be filled with full-time and experienced Saudi cybersecurity professionals."
+ },
+ {
+  "control_id": "1-2-3",
+  "level": 3,
+  "page": 14,
+  "text": "A cybersecurity steering committee must be established by the Authorizing Official to ensure the support and implementation of the cybersecurity programs and initiatives within the organization. Committee members, roles and responsibilities, and governance framework must be defined, documented and approved. The committee must include the head of the cybersecurity function as one of its members. It is highly recommended that the committee reports directly to the head of the organization or his/her delegate while ensuring that this does not result in a conflict of interest."
+ },
+ {
+  "control_id": "1-3-1",
+  "level": 3,
+  "page": 15,
+  "text": "Cybersecurity policies and procedures must be defined and documented by the cybersecurity function, approved by the Authorizing Official, and disseminated to relevant parties inside and outside the organization."
+ },
+ {
+  "control_id": "1-3-2",
+  "level": 3,
+  "page": 15,
+  "text": "The cybersecurity function must ensure that the cybersecurity policies and procedures are implemented."
+ },
+ {
+  "control_id": "1-3-3",
+  "level": 3,
+  "page": 15,
+  "text": "The cybersecurity policies and procedures must be supported by technical security standards (e.g., operating systems, databases and firewall technical security standards)."
+ },
+ {
+  "control_id": "1-3-4",
+  "level": 3,
+  "page": 15,
+  "text": "The cybersecurity policies and procedures must be reviewed periodically according to planned intervals or upon changes to related laws and regulations. Changes and reviews must be approved and documented."
+ },
+ {
+  "control_id": "1-4-1",
+  "level": 3,
+  "page": 15,
+  "text": "Cybersecurity organizational structure and related roles and responsibilities must be defined, documented, approved, supported and assigned by the Authorizing Official while ensuring that this does not result in a conflict of interest."
+ },
+ {
+  "control_id": "1-4-2",
+  "level": 3,
+  "page": 15,
+  "text": "The cybersecurity roles and responsibilities must be reviewed periodically according to planned intervals or upon changes to related laws and regulations."
+ },
+ {
+  "control_id": "1-5-1",
+  "level": 3,
+  "page": 15,
+  "text": "Cybersecurity risk management methodology and procedures must be defined, documented and approved as per confidentiality, integrity and availability considerations of information and technology assets."
+ },
+ {
+  "control_id": "1-5-2",
+  "level": 3,
+  "page": 15,
+  "text": "The cybersecurity risk management methodology and procedures must be implemented by the cybersecurity function."
+ },
+ {
+  "control_id": "1-5-3",
+  "level": 3,
+  "page": 16,
+  "text": "The cybersecurity risk assessment procedures must be implemented at least in the following cases: 1-5-3-1 Early stages of technology projects. 1-5-3-2 Before making major changes to technology infrastructure. 1-5-3-3 During the planning phase of obtaining third party services. 1-5-3-4 During the planning phase and before going live for new technology services and products."
+ },
+ {
+  "control_id": "1-5-3-1",
+  "level": 4,
+  "page": 16,
+  "text": "Early stages of technology projects."
+ },
+ {
+  "control_id": "1-5-3-2",
+  "level": 4,
+  "page": 16,
+  "text": "Before making major changes to technology infrastructure."
+ },
+ {
+  "control_id": "1-5-3-3",
+  "level": 4,
+  "page": 16,
+  "text": "During the planning phase of obtaining third party services."
+ },
+ {
+  "control_id": "1-5-3-4",
+  "level": 4,
+  "page": 16,
+  "text": "During the planning phase and before going live for new technology services and products."
+ },
+ {
+  "control_id": "1-5-4",
+  "level": 3,
+  "page": 16,
+  "text": "The cybersecurity risk management methodology and procedures must be reviewed periodically according to planned intervals or upon changes to related laws and regulations. Changes and reviews must be approved and documented."
+ },
+ {
+  "control_id": "1-6-1",
+  "level": 3,
+  "page": 16,
+  "text": "Cybersecurity requirements must be included in project and asset (information/ technology) change management methodology and procedures to identify and manage cybersecurity risks as part of project management lifecycle. The cybersecurity requirements must be a key part of the overall requirements of technology projects."
+ },
+ {
+  "control_id": "1-6-2",
+  "level": 3,
+  "page": 16,
+  "text": "The cybersecurity requirements in project and assets (information/technology) change management must include at least the following: 1-6-2-1 Vulnerability assessment and remediation. 1-6-2-2 Conducting a configurations’ review, secure configuration and hardening and patching before changes or going live for technology projects."
+ },
+ {
+  "control_id": "1-6-2-1",
+  "level": 4,
+  "page": 16,
+  "text": "Vulnerability assessment and remediation."
+ },
+ {
+  "control_id": "1-6-2-2",
+  "level": 4,
+  "page": 16,
+  "text": "Conducting a configurations’ review, secure configuration and hardening and patching before changes or going live for technology projects."
+ },
+ {
+  "control_id": "1-6-3",
+  "level": 3,
+  "page": 16,
+  "text": "The cybersecurity requirements related to software and application development projects must include at least the following: 1-6-3-1 Using secure coding standards. 1-6-3-2 Using trusted and licensed sources for software development tools and libraries. 1-6-3-3 Conducting compliance test for software against the defined organizational cybersecurity requirements. 1-6-3-4 Secure integration between software components. 1-6-3-5 Conducting a configurations’ review, secure configuration and hardening and patching before going live for software products."
+ },
+ {
+  "control_id": "1-6-3-1",
+  "level": 4,
+  "page": 16,
+  "text": "Using secure coding standards."
+ },
+ {
+  "control_id": "1-6-3-2",
+  "level": 4,
+  "page": 16,
+  "text": "Using trusted and licensed sources for software development tools and libraries."
+ },
+ {
+  "control_id": "1-6-3-3",
+  "level": 4,
+  "page": 16,
+  "text": "Conducting compliance test for software against the defined organizational cybersecurity requirements."
+ },
+ {
+  "control_id": "1-6-3-4",
+  "level": 4,
+  "page": 16,
+  "text": "Secure integration between software components."
+ },
+ {
+  "control_id": "1-6-3-5",
+  "level": 4,
+  "page": 16,
+  "text": "Conducting a configurations’ review, secure configuration and hardening and patching before going live for software products."
+ },
+ {
+  "control_id": "1-6-4",
+  "level": 3,
+  "page": 16,
+  "text": "The cybersecurity requirements in project management must be reviewed periodically."
+ },
+ {
+  "control_id": "1-7-1",
+  "level": 3,
+  "page": 16,
+  "text": "The organization must comply with related national cybersecurity laws and regulations."
+ },
+ {
+  "control_id": "1-7-2",
+  "level": 3,
+  "page": 16,
+  "text": "The organization must comply with any nationally-approved international agreements and commiments related to cybersecurity."
+ },
+ {
+  "control_id": "1-8-1",
+  "level": 3,
+  "page": 17,
+  "text": "Cybersecurity reviews must be conducted periodically by the cybersecurity function in the organization to assess the compliance with the cybersecurity controls in the organization."
+ },
+ {
+  "control_id": "1-8-2",
+  "level": 3,
+  "page": 17,
+  "text": "Cybersecurity audits and reviews must be conducted by independent parties outside the cybersecurity function (e.g., Internal Audit function) to assess the compliance with the cybersecurity controls in the organization. Audits and reviews must be conducted independently, while ensuring that this does not result in a conflict of interest, as per the Generally Accepted Auditing Standards (GAAS), and related laws and regulations."
+ },
+ {
+  "control_id": "1-8-3",
+  "level": 3,
+  "page": 17,
+  "text": "Results from the cybersecurity audits and reviews must be documented and presented to the cybersecurity steering committee and Authorizing Official. Results must include the audit/review scope, observations, recommendations and remediation plans."
+ },
+ {
+  "control_id": "1-9-1",
+  "level": 3,
+  "page": 17,
+  "text": "Personnel cybersecurity requirements (prior to employment, during employment and after termination/separation) must be defined, documented and approved."
+ },
+ {
+  "control_id": "1-9-2",
+  "level": 3,
+  "page": 17,
+  "text": "The personnel cybersecurity requirements must be implemented."
+ },
+ {
+  "control_id": "1-9-3",
+  "level": 3,
+  "page": 17,
+  "text": "The personnel cybersecurity requirements prior to employment must include at least the following: 1-9-3-1 Inclusion of personnel cybersecurity responsibilities and non-disclosure clauses (covering the cybersecurity requirements during employment and after termination/ separation) in employment contracts. 1-9-3-2 Screening or vetting candidates of cybersecurity and critical/privileged positions."
+ },
+ {
+  "control_id": "1-9-3-1",
+  "level": 4,
+  "page": 17,
+  "text": "Inclusion of personnel cybersecurity responsibilities and non-disclosure clauses"
+ },
+ {
+  "control_id": "1-9-3-2",
+  "level": 4,
+  "page": 17,
+  "text": "Screening or vetting candidates of cybersecurity and critical/privileged positions."
+ },
+ {
+  "control_id": "1-9-4",
+  "level": 3,
+  "page": 17,
+  "text": "The personnel cybersecurity requirements during employment must include at least the following: 1-9-4-1 Cybersecurity awareness (during on-boarding and during employment). 1-9-4-2 Implementation of and compliance with the cybersecurity requirements as per the organizational cybersecurity policies and procedures."
+ },
+ {
+  "control_id": "1-9-4-1",
+  "level": 4,
+  "page": 17,
+  "text": "Cybersecurity awareness (during on-boarding and during employment)."
+ },
+ {
+  "control_id": "1-9-4-2",
+  "level": 4,
+  "page": 17,
+  "text": "Implementation of and compliance with the cybersecurity requirements as per the organizational cybersecurity policies and procedures."
+ },
+ {
+  "control_id": "1-9-5",
+  "level": 3,
+  "page": 17,
+  "text": "Personnel access to information and technology assets must be reviewed and removed immediately upon termination/separation."
+ },
+ {
+  "control_id": "1-9-6",
+  "level": 3,
+  "page": 17,
+  "text": "Personnel cybersecurity requirements must be reviewed periodically."
+ },
+ {
+  "control_id": "1-10-1",
+  "level": 3,
+  "page": 18,
+  "text": "A cybersecurity awareness program must be developed and approved. The program must be conducted periodically through multiple channels to strengthen the awareness about cybersecurity, cyber threats and risks, and to build a positive cybersecurity awareness culture."
+ },
+ {
+  "control_id": "1-10-2",
+  "level": 3,
+  "page": 18,
+  "text": "The cybersecurity awareness program must be implemented."
+ },
+ {
+  "control_id": "1-10-3",
+  "level": 3,
+  "page": 18,
+  "text": "The cybersecurity awareness program must cover the latest cyber threats and how to protect against them, and must include at least the following subjects: 1-10-3-1 Secure handling of email services, especially phishing emails. 1-10-3-2 Secure handling of mobile devices and storage media. 1-10-3-3 Secure Internet browsing. 1-10-3-4 Secure use of social media."
+ },
+ {
+  "control_id": "1-10-3-1",
+  "level": 4,
+  "page": 18,
+  "text": "Secure handling of email services, especially phishing emails."
+ },
+ {
+  "control_id": "1-10-3-2",
+  "level": 4,
+  "page": 18,
+  "text": "Secure handling of mobile devices and storage media."
+ },
+ {
+  "control_id": "1-10-3-3",
+  "level": 4,
+  "page": 18,
+  "text": "Secure Internet browsing."
+ },
+ {
+  "control_id": "1-10-3-4",
+  "level": 4,
+  "page": 18,
+  "text": "Secure use of social media."
+ },
+ {
+  "control_id": "1-10-4",
+  "level": 3,
+  "page": 18,
+  "text": "Essential and customized (i.e., tailored to job functions as it relates to cybersecurity) training and access to professional skillsets must be made available to personnel working directly on tasks related to cybersecurity including: 1-10-4-1 Cybersecurity function’s personnel. 1-10-4-2 Personnel working on software/application development. and information and technology assets operations. 1-10-4-3 Executive and supervisory positions."
+ },
+ {
+  "control_id": "1-10-4-1",
+  "level": 4,
+  "page": 18,
+  "text": "Cybersecurity function’s personnel."
+ },
+ {
+  "control_id": "1-10-4-2",
+  "level": 4,
+  "page": 18,
+  "text": "Personnel working on software/application development. and information and technology assets operations."
+ },
+ {
+  "control_id": "1-10-4-3",
+  "level": 4,
+  "page": 18,
+  "text": "Executive and supervisory positions."
+ },
+ {
+  "control_id": "1-10-5",
+  "level": 3,
+  "page": 18,
+  "text": "The implementation of the cybersecurity awareness program must be reviewed periodically."
+ },
+ {
+  "control_id": "2-1-1",
+  "level": 3,
+  "page": 19,
+  "text": "Cybersecurity requirements for managing information and technology assets must be defined, documented and approved."
+ },
+ {
+  "control_id": "2-1-2",
+  "level": 3,
+  "page": 19,
+  "text": "The cybersecurity requirements for managing information and technology assets must be implemented."
+ },
+ {
+  "control_id": "2-1-3",
+  "level": 3,
+  "page": 19,
+  "text": "Acceptable use policy of information and technology assets must be defined, documented and approved."
+ },
+ {
+  "control_id": "2-1-4",
+  "level": 3,
+  "page": 19,
+  "text": "Acceptable use policy of information and technology assets must be implemented."
+ },
+ {
+  "control_id": "2-1-5",
+  "level": 3,
+  "page": 19,
+  "text": "Information and technology assets must be classified, labeled and handled as per related law and regulatory requirements."
+ },
+ {
+  "control_id": "2-1-6",
+  "level": 3,
+  "page": 19,
+  "text": "The cybersecurity requirements for managing information and technology assets must be reviewed periodically."
+ },
+ {
+  "control_id": "2-2-1",
+  "level": 3,
+  "page": 19,
+  "text": "Cybersecurity requirements for identity and access management must be defined, documented and approved."
+ },
+ {
+  "control_id": "2-2-2",
+  "level": 3,
+  "page": 19,
+  "text": "The cybersecurity requirements for identity and access management must be implemented."
+ },
+ {
+  "control_id": "2-2-3",
+  "level": 3,
+  "page": 19,
+  "text": "The cybersecurity requirements for identity and access management must include at least the following 2-2-3-1 User authentication based on username and password. 2-2-3-2 Multi-factor authentication for remote access. 2-2-3-3 User authorization based on identity and access control principles: Need-to-Know and Need-to-Use, Least Privilege and Segregation of Duties. 2-2-3-4 Privileged access management. 2-2-3-5 Periodic review of users’ identities and access rights."
+ },
+ {
+  "control_id": "2-2-3-1",
+  "level": 4,
+  "page": 19,
+  "text": "User authentication based on username and password."
+ },
+ {
+  "control_id": "2-2-3-2",
+  "level": 4,
+  "page": 19,
+  "text": "Multi-factor authentication for remote access."
+ },
+ {
+  "control_id": "2-2-3-3",
+  "level": 4,
+  "page": 19,
+  "text": "User authorization based on identity and access control principles: Need-to-Know and Need-to-Use, Least Privilege and Segregation of Duties."
+ },
+ {
+  "control_id": "2-2-3-4",
+  "level": 4,
+  "page": 19,
+  "text": "Privileged access management."
+ },
+ {
+  "control_id": "2-2-3-5",
+  "level": 4,
+  "page": 19,
+  "text": "Periodic review of users’ identities and access rights."
+ },
+ {
+  "control_id": "2-2-4",
+  "level": 3,
+  "page": 19,
+  "text": "The Implementation of the cybersecurity requirements for identity and access management must be reviewed periodically."
+ },
+ {
+  "control_id": "2-3-1",
+  "level": 3,
+  "page": 20,
+  "text": "Cybersecurity requirements for protecting information systems and information processing facilities must be defined, documented and approved."
+ },
+ {
+  "control_id": "2-3-2",
+  "level": 3,
+  "page": 20,
+  "text": "The cybersecurity requirements for protecting information systems and information processing facilities must be implemented."
+ },
+ {
+  "control_id": "2-3-3",
+  "level": 3,
+  "page": 20,
+  "text": "The cybersecurity requirements for protecting information systems and information processing facilities must include at least the following: 2-3-3-1 Advanced, up-to-date and secure management of malware and virus protection on servers and workstations. 2-3-3-2 Restricted use and secure handling of external storage media. 2-3-3-3 Patch management for information systems, software and devices. 2-3-3-4 Centralized clock synchronization with an accurate and trusted source (e.g., Saudi Standards, Metrology and Quality Organization (SASO))."
+ },
+ {
+  "control_id": "2-3-3-1",
+  "level": 4,
+  "page": 20,
+  "text": "Advanced, up-to-date and secure management of malware and virus protection on servers and workstations."
+ },
+ {
+  "control_id": "2-3-3-2",
+  "level": 4,
+  "page": 20,
+  "text": "Restricted use and secure handling of external storage media."
+ },
+ {
+  "control_id": "2-3-3-3",
+  "level": 4,
+  "page": 20,
+  "text": "Patch management for information systems, software and devices."
+ },
+ {
+  "control_id": "2-3-3-4",
+  "level": 4,
+  "page": 20,
+  "text": "Centralized clock synchronization with an accurate and trusted source (e.g., Saudi Standards, Metrology and Quality Organization (SASO))."
+ },
+ {
+  "control_id": "2-3-4",
+  "level": 3,
+  "page": 20,
+  "text": "The cybersecurity requirements for protecting information systems and information processing facilities must be reviewed periodically."
+ },
+ {
+  "control_id": "2-4-1",
+  "level": 3,
+  "page": 20,
+  "text": "Cybersecurity requirements for protecting email service must be defined, documented and approved."
+ },
+ {
+  "control_id": "2-4-2",
+  "level": 3,
+  "page": 20,
+  "text": "The cybersecurity requirements for email service must be implemented."
+ },
+ {
+  "control_id": "2-4-3",
+  "level": 3,
+  "page": 20,
+  "text": "The cybersecurity requirements for protecting the email service must include at the least the following: 2-4-3-1 Analyzing and filtering email messages (specifically phishing emails and spam) using advanced and up-to-date email protection techniques. 2-4-3-2 Multi-factor authentication for remote and webmail access to email service. 2-4-3-3 Email archiving and backup. 2-4-3-4 Secure management and protection against Advanced Persistent Threats (APT), which normally utilize zero-day viruses and malware. 2-4-3-5 Validation of the organization’s email service domains (e.g., using Sender Policy Framework (SPF))."
+ },
+ {
+  "control_id": "2-4-3-1",
+  "level": 4,
+  "page": 20,
+  "text": "Analyzing and filtering email messages (specifically phishing emails and spam) using advanced and up-to-date email protection techniques."
+ },
+ {
+  "control_id": "2-4-3-2",
+  "level": 4,
+  "page": 20,
+  "text": "Multi-factor authentication for remote and webmail access to email service."
+ },
+ {
+  "control_id": "2-4-3-3",
+  "level": 4,
+  "page": 20,
+  "text": "Email archiving and backup."
+ },
+ {
+  "control_id": "2-4-3-4",
+  "level": 4,
+  "page": 20,
+  "text": "Secure management and protection against Advanced Persistent Threats (APT), which normally utilize zero-day viruses and malware."
+ },
+ {
+  "control_id": "2-4-3-5",
+  "level": 4,
+  "page": 20,
+  "text": "Validation of the organization’s email service domains (e.g., using Sender Policy Framework (SPF))."
+ },
+ {
+  "control_id": "2-4-4",
+  "level": 3,
+  "page": 20,
+  "text": "The cybersecurity requirements for email service must be reviewed periodically."
+ },
+ {
+  "control_id": "2-5-1",
+  "level": 3,
+  "page": 21,
+  "text": "Cybersecurity requirements for network security management must be defined, documented and approved."
+ },
+ {
+  "control_id": "2-5-2",
+  "level": 3,
+  "page": 21,
+  "text": "The cybersecurity requirements for network security management must be implemented."
+ },
+ {
+  "control_id": "2-5-3",
+  "level": 3,
+  "page": 21,
+  "text": "The cybersecurity requirements for network security management must include at least the following: 2-5-3-1 Logical or physical segregation and segmentation of network segments using firewalls and defense-in-depth principles. 2-5-3-2 Network segregation between production, test and development environments. 2-5-3-3 Secure browsing and Internet connectivity including restrictions on the use of file storage/sharing and remote access websites, and protection against suspicious websites. 2-5-3-4 Wireless network protection using strong authentication and encryption techniques. A comprehensive risk assessment and management exercise must be conducted to assess and manage the cyber risks prior to connecting any wireless networks to the organization’s internal network. 2-5-3-5 Management and restrictions on network services, protocols and ports. 2-5-3-6 Intrusion Prevention Systems (IPS). 2-5-3-7 Security of Domain Name Service (DNS). 2-5-3-8 Secure management and protection of Internet browsing channel against Advanced Persistent Threats (APT), which normally utilize zero-day viruses and malware."
+ },
+ {
+  "control_id": "2-5-3-1",
+  "level": 4,
+  "page": 21,
+  "text": "Logical or physical segregation and segmentation of network segments using firewalls and defense-in-depth principles."
+ },
+ {
+  "control_id": "2-5-3-2",
+  "level": 4,
+  "page": 21,
+  "text": "Network segregation between production, test and development environments."
+ },
+ {
+  "control_id": "2-5-3-3",
+  "level": 4,
+  "page": 21,
+  "text": "Secure browsing and Internet connectivity including restrictions on the use of file storage/sharing and remote access websites, and protection against suspicious websites."
+ },
+ {
+  "control_id": "2-5-3-4",
+  "level": 4,
+  "page": 21,
+  "text": "Wireless network protection using strong authentication and encryption techniques. A comprehensive risk assessment and management exercise must be conducted to assess and manage the cyber risks prior to connecting any wireless networks to the organization’s internal network."
+ },
+ {
+  "control_id": "2-5-3-5",
+  "level": 4,
+  "page": 21,
+  "text": "Management and restrictions on network services, protocols and ports."
+ },
+ {
+  "control_id": "2-5-3-6",
+  "level": 4,
+  "page": 21,
+  "text": "Intrusion Prevention Systems (IPS)."
+ },
+ {
+  "control_id": "2-5-3-7",
+  "level": 4,
+  "page": 21,
+  "text": "Security of Domain Name Service (DNS)."
+ },
+ {
+  "control_id": "2-5-3-8",
+  "level": 4,
+  "page": 21,
+  "text": "Secure management and protection of Internet browsing channel against Advanced Persistent Threats (APT), which normally utilize zero-day viruses and malware."
+ },
+ {
+  "control_id": "2-5-4",
+  "level": 3,
+  "page": 21,
+  "text": "The cybersecurity requirements for network security management must be reviewed periodically."
+ },
+ {
+  "control_id": "2-6-1",
+  "level": 3,
+  "page": 21,
+  "text": "Cybersecurity requirements for mobile devices security and BYOD must be defined, documented and approved."
+ },
+ {
+  "control_id": "2-6-2",
+  "level": 3,
+  "page": 21,
+  "text": "The cybersecurity requirements for mobile devices security and BYOD must be implemented."
+ },
+ {
+  "control_id": "2-6-3",
+  "level": 3,
+  "page": 21,
+  "text": "The cybersecurity requirements for mobile devices security and BYOD must include at least the following: 2-6-3-1 Separation and encryption of organization’s data and information stored on mobile devices and BYODs. 2-6-3-2 Controlled and restricted use based on job requirements. 2-6-3-3 Secure wiping of organization’s data and information stored on mobile devices and BYOD in cases of device loss, theft or after termination/separation from the organization. 2-6-3-4 Security awareness for mobile devices users."
+ },
+ {
+  "control_id": "2-6-3-1",
+  "level": 4,
+  "page": 21,
+  "text": "Separation and encryption of organization’s data and information stored on mobile devices and BYODs."
+ },
+ {
+  "control_id": "2-6-3-2",
+  "level": 4,
+  "page": 21,
+  "text": "Controlled and restricted use based on job requirements."
+ },
+ {
+  "control_id": "2-6-3-3",
+  "level": 4,
+  "page": 21,
+  "text": "Secure wiping of organization’s data and information stored on mobile devices and BYOD in cases of device loss, theft or after termination/separation from the organization."
+ },
+ {
+  "control_id": "2-6-3-4",
+  "level": 4,
+  "page": 21,
+  "text": "Security awareness for mobile devices users."
+ },
+ {
+  "control_id": "2-6-4",
+  "level": 3,
+  "page": 22,
+  "text": "The cybersecurity requirements for mobile devices security and BYOD must be reviewed periodically."
+ },
+ {
+  "control_id": "2-7-1",
+  "level": 3,
+  "page": 22,
+  "text": "Cybersecurity requirements for protecting and handling data and information must be defined, documented and approved as per the related laws and regulations."
+ },
+ {
+  "control_id": "2-7-2",
+  "level": 3,
+  "page": 22,
+  "text": "The cybersecurity requirements for protecting and handling data and information must be implemented."
+ },
+ {
+  "control_id": "2-7-3",
+  "level": 3,
+  "page": 22,
+  "text": "The cybersecurity requirements for protecting and handling data and information must include at least the following: 2-7-3-1 Data and information ownership. 2-7-3-2 Data and information classification and labeling mechanisms. 2-7-3-3 Data and information privacy."
+ },
+ {
+  "control_id": "2-7-3-1",
+  "level": 4,
+  "page": 22,
+  "text": "Data and information ownership."
+ },
+ {
+  "control_id": "2-7-3-2",
+  "level": 4,
+  "page": 22,
+  "text": "Data and information classification and labeling mechanisms."
+ },
+ {
+  "control_id": "2-7-3-3",
+  "level": 4,
+  "page": 22,
+  "text": "Data and information privacy."
+ },
+ {
+  "control_id": "2-7-4",
+  "level": 3,
+  "page": 22,
+  "text": "The cybersecurity requirements for protecting and handling data and information must be reviewed periodically."
+ },
+ {
+  "control_id": "2-8-1",
+  "level": 3,
+  "page": 22,
+  "text": "Cybersecurity requirements for cryptography must be defined, documented and approved."
+ },
+ {
+  "control_id": "2-8-2",
+  "level": 3,
+  "page": 22,
+  "text": "The cybersecurity requirements for cryptography must be implemented."
+ },
+ {
+  "control_id": "2-8-3",
+  "level": 3,
+  "page": 22,
+  "text": "The cybersecurity requirements for cryptography must include at least the following: 2-8-3-1 Approved cryptographic solutions standards and its technical and regulatory limitations. 2-8-3-2 Secure management of cryptographic keys during their lifecycles. 2-8-3-3 Encryption of data in-transit and at-rest as per classification and related laws and regulations."
+ },
+ {
+  "control_id": "2-8-3-1",
+  "level": 4,
+  "page": 22,
+  "text": "Approved cryptographic solutions standards and its technical and regulatory limitations."
+ },
+ {
+  "control_id": "2-8-3-2",
+  "level": 4,
+  "page": 22,
+  "text": "Secure management of cryptographic keys during their lifecycles."
+ },
+ {
+  "control_id": "2-8-3-3",
+  "level": 4,
+  "page": 22,
+  "text": "Encryption of data in-transit and at-rest as per classification and related laws and regulations."
+ },
+ {
+  "control_id": "2-8-4",
+  "level": 3,
+  "page": 22,
+  "text": "The cybersecurity requirements for cryptography must be reviewed periodically."
+ },
+ {
+  "control_id": "2-9-1",
+  "level": 3,
+  "page": 22,
+  "text": "Cybersecurity requirements for backup and recovery management must be defined, documented and approved."
+ },
+ {
+  "control_id": "2-9-2",
+  "level": 3,
+  "page": 23,
+  "text": "The cybersecurity requirements for backup and recovery management must be implemented."
+ },
+ {
+  "control_id": "2-9-3",
+  "level": 3,
+  "page": 23,
+  "text": "The cybersecurity requirements for backup and recovery management must include at least the following: 2-9-3-1 Scope and coverage of backups to cover critical technology and information assets. 2-9-3-2 Ability to perform quick recovery of data and systems after cybersecurity incidents. 2-9-3-3 Periodic tests of backup’s recovery effectiveness."
+ },
+ {
+  "control_id": "2-9-3-1",
+  "level": 4,
+  "page": 23,
+  "text": "Scope and coverage of backups to cover critical technology and information assets."
+ },
+ {
+  "control_id": "2-9-3-2",
+  "level": 4,
+  "page": 23,
+  "text": "Ability to perform quick recovery of data and systems after cybersecurity incidents."
+ },
+ {
+  "control_id": "2-9-3-3",
+  "level": 4,
+  "page": 23,
+  "text": "Periodic tests of backup’s recovery effectiveness."
+ },
+ {
+  "control_id": "2-9-4",
+  "level": 3,
+  "page": 23,
+  "text": "The cybersecurity requirements for backup and recovery management must be reviewed periodically."
+ },
+ {
+  "control_id": "2-10-1",
+  "level": 3,
+  "page": 23,
+  "text": "Cybersecurity requirements for technical vulnerabilities management must be defined, documented and approved."
+ },
+ {
+  "control_id": "2-10-2",
+  "level": 3,
+  "page": 23,
+  "text": "The cybersecurity requirements for technical vulnerabilities management must be implemented."
+ },
+ {
+  "control_id": "2-10-3",
+  "level": 3,
+  "page": 23,
+  "text": "The cybersecurity requirements for technical vulnerabilities management must include at least the following: 2-10-3-1 Periodic vulnerabilities assessments. 2-10-3-2 Vulnerabilities classification based on criticality level. 2-10-3-3 Vulnerabilities remediation based on classification and associated risk levels. 2-10-3-4 Security patch management. 2-10-3-5 Subscription with authorized and trusted cybersecurity resources for up-to-date information and notifications on technical vulnerabilities."
+ },
+ {
+  "control_id": "2-10-3-1",
+  "level": 4,
+  "page": 23,
+  "text": "Periodic vulnerabilities assessments."
+ },
+ {
+  "control_id": "2-10-3-2",
+  "level": 4,
+  "page": 23,
+  "text": "Vulnerabilities classification based on criticality level."
+ },
+ {
+  "control_id": "2-10-3-3",
+  "level": 4,
+  "page": 23,
+  "text": "Vulnerabilities remediation based on classification and associated risk levels."
+ },
+ {
+  "control_id": "2-10-3-4",
+  "level": 4,
+  "page": 23,
+  "text": "Security patch management."
+ },
+ {
+  "control_id": "2-10-3-5",
+  "level": 4,
+  "page": 23,
+  "text": "Subscription with authorized and trusted cybersecurity resources for up-to-date information and notifications on technical vulnerabilities."
+ },
+ {
+  "control_id": "2-10-4",
+  "level": 3,
+  "page": 23,
+  "text": "The cybersecurity requirements for technical vulnerabilities management must be reviewed periodically."
+ },
+ {
+  "control_id": "2-11-1",
+  "level": 3,
+  "page": 23,
+  "text": "Cybersecurity requirements for penetration testing exercises must be defined, documented and approved."
+ },
+ {
+  "control_id": "2-11-2",
+  "level": 3,
+  "page": 23,
+  "text": "The cybersecurity requirements for penetration testing processes must be implemented."
+ },
+ {
+  "control_id": "2-11-3",
+  "level": 3,
+  "page": 23,
+  "text": "The cybersecurity requirements for penetration testing processes must include at least the following: 2-11-3-1 Scope of penetration tests which must cover Internet-facing services and its technical components including infrastructure, websites, web applications, mobile apps, email and remote access. 2-11-3-2 Conducting penetration tests periodically."
+ },
+ {
+  "control_id": "2-11-3-1",
+  "level": 4,
+  "page": 23,
+  "text": "Scope of penetration tests which must cover Internet-facing services and its technical"
+ },
+ {
+  "control_id": "2-11-3-2",
+  "level": 4,
+  "page": 23,
+  "text": "Conducting penetration tests periodically."
+ },
+ {
+  "control_id": "2-11-4",
+  "level": 3,
+  "page": 24,
+  "text": "Cybersecurity requirements for penetration testing processes must be reviewed periodically."
+ },
+ {
+  "control_id": "2-12-1",
+  "level": 3,
+  "page": 24,
+  "text": "Cybersecurity requirements for event logs and monitoring management must be defined, documented and approved."
+ },
+ {
+  "control_id": "2-12-2",
+  "level": 3,
+  "page": 24,
+  "text": "The cybersecurity requirements for event logs and monitoring management must be implemented."
+ },
+ {
+  "control_id": "2-12-3",
+  "level": 3,
+  "page": 24,
+  "text": "The cybersecurity requirements for event logs and monitoring management must include at least the following: 2-12-3-1 Activation of cybersecurity event logs on critical information assets. 2-12-3-2 Activation of cybersecurity event logs on remote access and privileged user accounts. 2-12-3-3 Identification of required technologies (e.g., SIEM) for cybersecurity event logs collection. 2-12-3-4 Continuous monitoring of cybersecurity events. 2-12-3-5 Retention period for cybersecurity event logs (must be 12 months minimum)."
+ },
+ {
+  "control_id": "2-12-3-1",
+  "level": 4,
+  "page": 24,
+  "text": "Activation of cybersecurity event logs on critical information assets."
+ },
+ {
+  "control_id": "2-12-3-2",
+  "level": 4,
+  "page": 24,
+  "text": "Activation of cybersecurity event logs on remote access and privileged user accounts."
+ },
+ {
+  "control_id": "2-12-3-3",
+  "level": 4,
+  "page": 24,
+  "text": "Identification of required technologies (e.g., SIEM) for cybersecurity event logs collection."
+ },
+ {
+  "control_id": "2-12-3-4",
+  "level": 4,
+  "page": 24,
+  "text": "Continuous monitoring of cybersecurity events."
+ },
+ {
+  "control_id": "2-12-3-5",
+  "level": 4,
+  "page": 24,
+  "text": "Retention period for cybersecurity event logs (must be 12 months minimum)."
+ },
+ {
+  "control_id": "2-12-4",
+  "level": 3,
+  "page": 24,
+  "text": "The cybersecurity requirements for event logs and monitoring management must be reviewed periodically."
+ },
+ {
+  "control_id": "2-13-1",
+  "level": 3,
+  "page": 24,
+  "text": "Requirements for cybersecurity incidents and threat management must be defined, documented and approved."
+ },
+ {
+  "control_id": "2-13-2",
+  "level": 3,
+  "page": 24,
+  "text": "The requirements for cybersecurity incidents and threat management must be implemented."
+ },
+ {
+  "control_id": "2-13-3",
+  "level": 3,
+  "page": 24,
+  "text": "The requirements for cybersecurity incidents and threat management must include at least the following: 2-13-3-1 Cybersecurity incident response plans and escalation procedures. 2-13-3-2 Cybersecurity incidents classification. 2-13-3-3 Cybersecurity incidents reporting to NCA. 2-13-3-4 Sharing incidents notifications, threat intelligence, breach indicators and reports with NCA. 2-13-3-5 Collecting and handling threat intelligence feeds."
+ },
+ {
+  "control_id": "2-13-3-1",
+  "level": 4,
+  "page": 24,
+  "text": "Cybersecurity incident response plans and escalation procedures."
+ },
+ {
+  "control_id": "2-13-3-2",
+  "level": 4,
+  "page": 24,
+  "text": "Cybersecurity incidents classification."
+ },
+ {
+  "control_id": "2-13-3-3",
+  "level": 4,
+  "page": 24,
+  "text": "Cybersecurity incidents reporting to NCA."
+ },
+ {
+  "control_id": "2-13-3-4",
+  "level": 4,
+  "page": 24,
+  "text": "Sharing incidents notifications, threat intelligence, breach indicators and reports with NCA."
+ },
+ {
+  "control_id": "2-13-3-5",
+  "level": 4,
+  "page": 24,
+  "text": "Collecting and handling threat intelligence feeds."
+ },
+ {
+  "control_id": "2-13-4",
+  "level": 3,
+  "page": 24,
+  "text": "The requirements for cybersecurity incidents and threat management must be reviewed periodically."
+ },
+ {
+  "control_id": "2-14-1",
+  "level": 3,
+  "page": 25,
+  "text": "Cybersecurity requirements for physical protection of information and technology assets must be defined, documented and approved."
+ },
+ {
+  "control_id": "2-14-2",
+  "level": 3,
+  "page": 25,
+  "text": "The cybersecurity requirements for physical protection of information and technology assets must be implemented."
+ },
+ {
+  "control_id": "2-14-3",
+  "level": 3,
+  "page": 25,
+  "text": "The cybersecurity requirements for physical protection of information and technology assets must include at least the following: 2-14-3-1 Authorized access to sensitive areas within the organization (e.g., data center, disaster recovery center, sensitive information processing facilities, security surveillance center, network cabinets). 2-14-3-2 Facility entry/exit records and CCTV monitoring. 2-14-3-3 Protection of facility entry/exit and surveillance records. 2-14-3-4 Secure destruction and re-use of physical assets that hold classified information (including documents and storage media). 2-14-3-5 Security of devices and equipment inside and outside the organization’s facilities."
+ },
+ {
+  "control_id": "2-14-3-1",
+  "level": 4,
+  "page": 25,
+  "text": "Authorized access to sensitive areas within the organization (e.g., data center, disaster recovery center, sensitive information processing facilities, security surveillance center, network cabinets)."
+ },
+ {
+  "control_id": "2-14-3-2",
+  "level": 4,
+  "page": 25,
+  "text": "Facility entry/exit records and CCTV monitoring."
+ },
+ {
+  "control_id": "2-14-3-3",
+  "level": 4,
+  "page": 25,
+  "text": "Protection of facility entry/exit and surveillance records."
+ },
+ {
+  "control_id": "2-14-3-4",
+  "level": 4,
+  "page": 25,
+  "text": "Secure destruction and re-use of physical assets that hold classified information (including documents and storage media)."
+ },
+ {
+  "control_id": "2-14-3-5",
+  "level": 4,
+  "page": 25,
+  "text": "Security of devices and equipment inside and outside the organization’s facilities."
+ },
+ {
+  "control_id": "2-14-4",
+  "level": 3,
+  "page": 25,
+  "text": "The cybersecurity requirements for physical protection of information and technology assets must be reviewed periodically."
+ },
+ {
+  "control_id": "2-15-1",
+  "level": 3,
+  "page": 25,
+  "text": "Cybersecurity requirements for external web applications must be defined, documented and approved."
+ },
+ {
+  "control_id": "2-15-2",
+  "level": 3,
+  "page": 25,
+  "text": "The cybersecurity requirements for external web applications must be implemented."
+ },
+ {
+  "control_id": "2-15-3",
+  "level": 3,
+  "page": 25,
+  "text": "The cybersecurity requirements for external web applications must include at least the following: 2-15-3-1 Use of web application firewall. 2-15-3-2 Adoption of the multi-tier architecture principle. 2-15-3-3 Use of secure protocols (e.g., HTTPS). 2-15-3-4 Clarification of the secure usage policy for users. 2-15-3-5 Multi-factor authentication for users’ access."
+ },
+ {
+  "control_id": "2-15-3-1",
+  "level": 4,
+  "page": 25,
+  "text": "Use of web application firewall."
+ },
+ {
+  "control_id": "2-15-3-2",
+  "level": 4,
+  "page": 25,
+  "text": "Adoption of the multi-tier architecture principle."
+ },
+ {
+  "control_id": "2-15-3-3",
+  "level": 4,
+  "page": 25,
+  "text": "Use of secure protocols (e.g., HTTPS)."
+ },
+ {
+  "control_id": "2-15-3-4",
+  "level": 4,
+  "page": 25,
+  "text": "Clarification of the secure usage policy for users."
+ },
+ {
+  "control_id": "2-15-3-5",
+  "level": 4,
+  "page": 25,
+  "text": "Multi-factor authentication for users’ access."
+ },
+ {
+  "control_id": "2-15-4",
+  "level": 3,
+  "page": 25,
+  "text": "The cybersecurity requirements for external web applications must be reviewed periodically."
+ },
+ {
+  "control_id": "3-1-1",
+  "level": 3,
+  "page": 26,
+  "text": "Cybersecurity requirements for business continuity management must be defined, documented and approved."
+ },
+ {
+  "control_id": "3-1-2",
+  "level": 3,
+  "page": 26,
+  "text": "The cybersecurity requirements for business continuity management must be implemented."
+ },
+ {
+  "control_id": "3-1-3",
+  "level": 3,
+  "page": 26,
+  "text": "The cybersecurity requirements for business continuity management must include at least the following: 3-1-3-1 Ensuring the continuity of cybersecurity systems and procedures. 3-1-3-2 Developing response plans for cybersecurity incidents that may affect the business continuity. 3-1-3-3 Developing disaster recovery plans."
+ },
+ {
+  "control_id": "3-1-3-1",
+  "level": 4,
+  "page": 26,
+  "text": "Ensuring the continuity of cybersecurity systems and procedures."
+ },
+ {
+  "control_id": "3-1-3-2",
+  "level": 4,
+  "page": 26,
+  "text": "Developing response plans for cybersecurity incidents that may affect the business continuity."
+ },
+ {
+  "control_id": "3-1-3-3",
+  "level": 4,
+  "page": 26,
+  "text": "Developing disaster recovery plans."
+ },
+ {
+  "control_id": "3-1-4",
+  "level": 3,
+  "page": 26,
+  "text": "The cybersecurity requirements for business continuity management must be reviewed periodically."
+ },
+ {
+  "control_id": "4-1-1",
+  "level": 3,
+  "page": 27,
+  "text": "Cybersecurity requirements for contracts and agreements with third-parties must be identified, documented and approved."
+ },
+ {
+  "control_id": "4-1-2",
+  "level": 3,
+  "page": 27,
+  "text": "The cybersecurity requirements for contracts and agreements with third-parties (e.g., Service Level Agreement (SLA)) -which may affect, if impacted, the organization’s data or services- must include at least the following: 4-1-2-1 Non-disclosure clauses and secure removal of organization’s data by third parties upon end of service. 4-1-2-2 Communication procedures in case of cybersecurity incidents. 4-1-2-3 Requirements for third-parties to comply with related organizational policies and procedures, laws and regulations."
+ },
+ {
+  "control_id": "4-1-2-1",
+  "level": 4,
+  "page": 27,
+  "text": "Non-disclosure clauses and secure removal of organization’s data by third parties upon"
+ },
+ {
+  "control_id": "4-1-2-2",
+  "level": 4,
+  "page": 27,
+  "text": "Communication procedures in case of cybersecurity incidents."
+ },
+ {
+  "control_id": "4-1-2-3",
+  "level": 4,
+  "page": 27,
+  "text": "Requirements for third-parties to comply with related organizational policies and procedures, laws and regulations."
+ },
+ {
+  "control_id": "4-1-3",
+  "level": 3,
+  "page": 27,
+  "text": "The cybersecurity requirements for contracts and agreements with IT outsourcing and managed services third-parties must include at least the following: 4-1-3-1 Conducting a cybersecurity risk assessment to ensure the availability of risk mitigation controls before signing contracts and agreements or upon changes in related regulatory requirements. 4-1-3-2 Cybersecurity managed services centers for monitoring and operations must be completely present inside the Kingdom of Saudi Arabia."
+ },
+ {
+  "control_id": "4-1-3-1",
+  "level": 4,
+  "page": 27,
+  "text": "Conducting a cybersecurity risk assessment to ensure the availability of risk mitigation"
+ },
+ {
+  "control_id": "4-1-3-2",
+  "level": 4,
+  "page": 27,
+  "text": "Cybersecurity managed services centers for monitoring and operations must be completely present inside the Kingdom of Saudi Arabia."
+ },
+ {
+  "control_id": "4-1-4",
+  "level": 3,
+  "page": 27,
+  "text": "The cybersecurity requirements for contracts and agreements with third-parties must be reviewed periodically."
+ },
+ {
+  "control_id": "4-2-1",
+  "level": 3,
+  "page": 27,
+  "text": "Cybersecurity requirements related to the use of hosting and cloud computing services must be defined, documented and approved."
+ },
+ {
+  "control_id": "4-2-2",
+  "level": 3,
+  "page": 27,
+  "text": "The cybersecurity requirements related to the use of hosting and cloud computing services must be implemented."
+ },
+ {
+  "control_id": "4-2-3",
+  "level": 3,
+  "page": 28,
+  "text": "In line with related and applicable laws and regulations, and in addition to the applicable ECC controls from main domains (1), (2), (3) and subdomain (4-1), the cybersecurity requirements related to the use of hosting and cloud computing services must include at least the following: 4-2-3-1 Classification of data prior to hosting on cloud or hosting services and returning data (in a usable format) upon service completion. 4-2-3-2 Separation of organization’s environments (specifically virtual servers) from other environments hosted at the cloud service provider. 4-2-3-3 Organization’s information hosting and storage must be inside the Kingdom of Saudi Arabia."
+ },
+ {
+  "control_id": "4-2-3-1",
+  "level": 4,
+  "page": 28,
+  "text": "Classification of data prior to hosting on cloud or hosting services and returning data"
+ },
+ {
+  "control_id": "4-2-3-2",
+  "level": 4,
+  "page": 28,
+  "text": "Separation of organization’s environments (specifically virtual servers) from other environments hosted at the cloud service provider."
+ },
+ {
+  "control_id": "4-2-3-3",
+  "level": 4,
+  "page": 28,
+  "text": "Organization’s information hosting and storage must be inside the Kingdom of Saudi Arabia."
+ },
+ {
+  "control_id": "4-2-4",
+  "level": 3,
+  "page": 28,
+  "text": "The cybersecurity requirements related to the use of hosting and cloud computing services must be reviewed periodically."
+ },
+ {
+  "control_id": "5-1-1",
+  "level": 3,
+  "page": 29,
+  "text": "Cybersecurity requirements related to Industrial Controls Systems and Operational Technology (ICS/OT) must be defined, documented and approved."
+ },
+ {
+  "control_id": "5-1-2",
+  "level": 3,
+  "page": 29,
+  "text": "The cybersecurity requirements related to Industrial Controls Systems and Operational Technology (ICS/OT) must be implemented."
+ },
+ {
+  "control_id": "5-1-3",
+  "level": 3,
+  "page": 29,
+  "text": "In addition to the applicable ECC controls from the main domains (1), (2), (3) and (4), the cybersecurity requirements related to Industrial Controls Systems and Operational Technology (ICS/OT) must include at least the following: 5-1-3-1 Strict physical and virtual segmentation when connecting industrial production networks to other networks within the organization (e.g., corporate network). 5-1-3-2 Strict physical and virtual segmentation when connecting systems and industrial networks with external networks (e.g., Internet, wireless, remote access). 5-1-3-3 Continuous monitoring and activation of cybersecurity event logs on the industrial networks and its connections. 5-1-3-4 Isolation of Safety Instrumental Systems (SIS). 5-1-3-5 Strict limitation on the use of external storage media. 5-1-3-6 Strict limitation on connecting mobile devices to industrial production networks. 5-1-3-7 Periodic review and secure configuration and hardening of industrial, automated, support systems, and devices. 5-1-3-8 Vulnerability management for industrial control systems and operational technology (ICS/OT). 5-1-3-9 Patch management for industrial control systems and operational technology (ICS/OT). 5-1-3-10 Cybersecurity applications management related to the protection of the industrial systems from viruses and malware."
+ },
+ {
+  "control_id": "5-1-3-1",
+  "level": 4,
+  "page": 29,
+  "text": "Strict physical and virtual segmentation when connecting industrial production networks to other networks within the organization (e.g., corporate network)."
+ },
+ {
+  "control_id": "5-1-3-2",
+  "level": 4,
+  "page": 29,
+  "text": "Strict physical and virtual segmentation when connecting systems and industrial networks with external networks (e.g., Internet, wireless, remote access)."
+ },
+ {
+  "control_id": "5-1-3-3",
+  "level": 4,
+  "page": 29,
+  "text": "Continuous monitoring and activation of cybersecurity event logs on the industrial networks and its connections."
+ },
+ {
+  "control_id": "5-1-3-4",
+  "level": 4,
+  "page": 29,
+  "text": "Isolation of Safety Instrumental Systems (SIS)."
+ },
+ {
+  "control_id": "5-1-3-5",
+  "level": 4,
+  "page": 29,
+  "text": "Strict limitation on the use of external storage media."
+ },
+ {
+  "control_id": "5-1-3-6",
+  "level": 4,
+  "page": 29,
+  "text": "Strict limitation on connecting mobile devices to industrial production networks."
+ },
+ {
+  "control_id": "5-1-3-7",
+  "level": 4,
+  "page": 29,
+  "text": "Periodic review and secure configuration and hardening of industrial, automated, support systems, and devices."
+ },
+ {
+  "control_id": "5-1-3-8",
+  "level": 4,
+  "page": 29,
+  "text": "Vulnerability management for industrial control systems and operational technology (ICS/OT)."
+ },
+ {
+  "control_id": "5-1-3-9",
+  "level": 4,
+  "page": 29,
+  "text": "Patch management for industrial control systems and operational technology (ICS/OT)."
+ },
+ {
+  "control_id": "5-1-3-10",
+  "level": 4,
+  "page": 29,
+  "text": "Cybersecurity applications management related to the protection of the industrial systems from viruses and malware."
+ },
+ {
+  "control_id": "5-1-4",
+  "level": 3,
+  "page": 29,
+  "text": "The cybersecurity requirements related to Industrial Controls Systems and Operational Technology (ICS/OT) must be reviewed periodically."
+ }
+]

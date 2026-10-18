@@ -1,0 +1,344 @@
+{
+  "config": {
+    "seed": 42,
+    "n_tweets": 48760,
+    "n_orgs": 200,
+    "out": "results_extra",
+    "controls": "controls.csv",
+    "main_results": "results/results.json",
+    "quick": false
+  },
+  "environment": {
+    "python": "3.13.16",
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "scikit_learn": "1.8.0",
+    "xgboost": "3.4.1"
+  },
+  "generator_replica_identical_to_common_make_tweets_first_3000": true,
+  "logreg_C_frozen_from_main_run": 0.3,
+  "standard_split_replica": {
+    "xgboost_macro_f1": 0.8267586771408849,
+    "logreg_macro_f1": 0.8342611721614789,
+    "C": 0.3
+  },
+  "E_bootstrap_standard_test": {
+    "xgboost_ci95": [
+      0.8179629267827275,
+      0.8353543472475707
+    ],
+    "logreg_ci95": [
+      0.8255944482235532,
+      0.8434288241921067
+    ],
+    "logreg_minus_xgboost_diff_ci95": [
+      -0.00030073204757699297,
+      0.014590154763190378
+    ],
+    "prob_logreg_better": 0.973
+  },
+  "D_overlap_standard_split": {
+    "test_posts_with_exact_text_in_train": 0.23543888433141918,
+    "test_posts_whose_generating_signature_(lang,class,template,domain,confuser) occurs in train": 0.9978124145474433,
+    "test_posts_whose_main_template_family_occurs_in_train": 1.0,
+    "n_template_families": 24,
+    "note": "signature = generating parameters before token dropout; a match means a near-duplicate up to dropped tokens/hashtag"
+  },
+  "A_template_held_out_strict": {
+    "folds": [
+      {
+        "xgboost_macro_f1": 0.23177260922624454,
+        "logreg_macro_f1": 0.31737970810710214,
+        "n_train": 33339,
+        "n_test": 12270,
+        "held_out_template_index": 0
+      },
+      {
+        "xgboost_macro_f1": 0.29939996880091174,
+        "logreg_macro_f1": 0.2693816539057768,
+        "n_train": 33268,
+        "n_test": 12310,
+        "held_out_template_index": 1
+      },
+      {
+        "xgboost_macro_f1": 0.28656079448635324,
+        "logreg_macro_f1": 0.24801796874246448,
+        "n_train": 33527,
+        "n_test": 12054,
+        "held_out_template_index": 2
+      },
+      {
+        "xgboost_macro_f1": 0.6109286238838921,
+        "logreg_macro_f1": 0.3147876871240404,
+        "n_train": 33515,
+        "n_test": 12126,
+        "held_out_template_index": 3
+      }
+    ],
+    "xgboost_macro_f1": {
+      "mean": 0.35716549909935047,
+      "sd": 0.14869514209893692,
+      "per_fold": [
+        0.23177260922624454,
+        0.29939996880091174,
+        0.28656079448635324,
+        0.6109286238838921
+      ]
+    },
+    "logreg_macro_f1": {
+      "mean": 0.28739175446984594,
+      "sd": 0.02968363696625221,
+      "per_fold": [
+        0.31737970810710214,
+        0.2693816539057768,
+        0.24801796874246448,
+        0.3147876871240404
+      ]
+    },
+    "note": "test posts are built on main templates never seen in training (neither as main text nor as confuser fragment)"
+  },
+  "B_domain_held_out": {
+    "folds": [
+      {
+        "xgboost_macro_f1": 0.823726089084074,
+        "logreg_macro_f1": 0.8252144416645025,
+        "n_train": 36746,
+        "n_test": 12014,
+        "held_out_domain_ids": [
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "xgboost_macro_f1": 0.8300391223348762,
+        "logreg_macro_f1": 0.8234331582273469,
+        "n_train": 36594,
+        "n_test": 12166,
+        "held_out_domain_ids": [
+          1,
+          3,
+          4
+        ]
+      },
+      {
+        "xgboost_macro_f1": 0.826742047242211,
+        "logreg_macro_f1": 0.8326744179658155,
+        "n_train": 36442,
+        "n_test": 12318,
+        "held_out_domain_ids": [
+          2,
+          8,
+          10
+        ]
+      },
+      {
+        "xgboost_macro_f1": 0.8264077703273401,
+        "logreg_macro_f1": 0.831224868112639,
+        "n_train": 36498,
+        "n_test": 12262,
+        "held_out_domain_ids": [
+          0,
+          9,
+          11
+        ]
+      }
+    ],
+    "xgboost_macro_f1": {
+      "mean": 0.8267287572471254,
+      "sd": 0.0022404096912308612,
+      "per_fold": [
+        0.823726089084074,
+        0.8300391223348762,
+        0.826742047242211,
+        0.8264077703273401
+      ]
+    },
+    "logreg_macro_f1": {
+      "mean": 0.828136721492576,
+      "sd": 0.0038984152425644365,
+      "per_fold": [
+        0.8252144416645025,
+        0.8234331582273469,
+        0.8326744179658155,
+        0.831224868112639
+      ]
+    }
+  },
+  "C_paraphrase_author_written": {
+    "n_posts": 360,
+    "n_distinct_sentences": 30,
+    "xgboost_macro_f1": 0.6017008254419893,
+    "logreg_macro_f1": 0.719117343792176,
+    "per_language_xgboost": {
+      "en": 0.6610580259435221,
+      "ar": 0.5472335468841002
+    },
+    "per_language_logreg": {
+      "en": 0.7267073525138041,
+      "ar": 0.7093275990444395
+    },
+    "note": "30 sentences (5 per class and language) written by the thesis author, balanced; labels by construction; not expert annotation; small"
+  },
+  "F_remediation_regimes": {
+    "linear (thesis)": {
+      "mean_total_reward": {
+        "highest_risk": 0.6199135173169493,
+        "agent": 0.6644990583743942,
+        "oracle": 0.6645835580744792,
+        "random": 0.3738727441978555,
+        "fixed_order": 0.31701930338047546
+      },
+      "agent_vs_highest_risk_pct": 7.1922195293330216,
+      "agent_vs_highest_risk_ci95": [
+        6.946386491122204,
+        7.436839646124541
+      ],
+      "agent_vs_fixed_order_pct": 109.60839017959914,
+      "agent_share_of_oracle_pct": 99.98728531588566,
+      "agent_share_of_oracle_ci95": [
+        99.98497341262119,
+        99.98956690802807
+      ],
+      "n_test_states": 3000
+    },
+    "concave: sqrt(risk) x effectiveness": {
+      "mean_total_reward": {
+        "highest_risk": 1.0938939419953964,
+        "agent": 1.2655293235418852,
+        "oracle": 1.2673055071322974,
+        "random": 0.8301175226829094,
+        "fixed_order": 0.7063571313911253
+      },
+      "agent_vs_highest_risk_pct": 15.690312831736207,
+      "agent_vs_highest_risk_ci95": [
+        15.299980064648087,
+        16.064602470230337
+      ],
+      "agent_vs_fixed_order_pct": 79.16281542305742,
+      "agent_share_of_oracle_pct": 99.85984566622523,
+      "agent_share_of_oracle_ci95": [
+        99.84591921373602,
+        99.87381577998184
+      ],
+      "n_test_states": 3000
+    },
+    "threshold: only risk > 0.3 pays": {
+      "mean_total_reward": {
+        "highest_risk": 0.39927834843708826,
+        "agent": 0.3988401740051281,
+        "oracle": 0.402591259996253,
+        "random": 0.13946828947999204,
+        "fixed_order": 0.12059336816339244
+      },
+      "agent_vs_highest_risk_pct": -0.10974159597566535,
+      "agent_vs_highest_risk_ci95": [
+        -0.33238381608495016,
+        0.13945483163987304
+      ],
+      "agent_vs_fixed_order_pct": 230.73143248203993,
+      "agent_share_of_oracle_pct": 99.06826442502508,
+      "agent_share_of_oracle_ci95": [
+        98.88734031751171,
+        99.23300546283102
+      ],
+      "n_test_states": 3000
+    }
+  },
+  "G_forecaster_variability": {
+    "h7": {
+      "n_test_orgs": 30,
+      "mae_model_mean_over_orgs": 0.03067522010715483,
+      "mae_model_sd_over_orgs": 0.0015258226593451855,
+      "mae_ma7_mean_over_orgs": 0.03559752182444809,
+      "mae_persistence_mean_over_orgs": 0.035672526739883796,
+      "gain_vs_ma7_pct_mean": 13.827652783157129,
+      "gain_vs_ma7_pct_ci95": [
+        12.877814950128583,
+        14.744427868793679
+      ],
+      "share_orgs_model_beats_ma7": 1.0
+    },
+    "h14": {
+      "n_test_orgs": 30,
+      "mae_model_mean_over_orgs": 0.041204947144982976,
+      "mae_model_sd_over_orgs": 0.0032933155783621006,
+      "mae_ma7_mean_over_orgs": 0.04599018201722506,
+      "mae_persistence_mean_over_orgs": 0.04649135905750588,
+      "gain_vs_ma7_pct_mean": 10.404905269672193,
+      "gain_vs_ma7_pct_ci95": [
+        9.172862888750426,
+        11.46418953543616
+      ],
+      "share_orgs_model_beats_ma7": 1.0
+    },
+    "h30": {
+      "n_test_orgs": 30,
+      "mae_model_mean_over_orgs": 0.06254487799633109,
+      "mae_model_sd_over_orgs": 0.00702489984417671,
+      "mae_ma7_mean_over_orgs": 0.06533569499867282,
+      "mae_persistence_mean_over_orgs": 0.06648780354036844,
+      "gain_vs_ma7_pct_mean": 4.27150427097841,
+      "gain_vs_ma7_pct_ci95": [
+        2.4678243599437817,
+        6.035368209343481
+      ],
+      "share_orgs_model_beats_ma7": 0.7666666666666667
+    }
+  },
+  "H_layer1_structural": {
+    "n_records": 148,
+    "duplicate_ids": 0,
+    "ids_with_unknown_ecc_subdomain": 0,
+    "ids_with_unknown_main_domain": 0,
+    "level3_per_subdomain_min_max": [
+      1,
+      4
+    ],
+    "note": "These checks do not give precision. Precision/recall against the source needs the ECC-1:2018 PDF or a hand-annotated gold.csv (layer1_extract.py --gold)."
+  },
+  "I_traced_record_executed": {
+    "note": "Executed run on synthetic data. The post and the audit series are joined only through the shared simulated domain; this shows that module outputs can be chained in one record, not that the post is evidence about the simulated organisation.",
+    "org": 13,
+    "domain": "governance",
+    "alarm_day": 324,
+    "event_onset": 316,
+    "detection_delay_days": 8.0,
+    "post_text": "Failed the assessment on governance: policy not #ECC",
+    "post_true_label": "non_compliant",
+    "layer1_link": {
+      "method": "word TF-IDF cosine",
+      "matched_control_id": "1-6-2",
+      "matched_subdomain": "Cybersecurity in Information Technology Projects",
+      "similarity": 0.21466376725628117,
+      "matched_control_is_in_post_domain": false
+    },
+    "layer3_classification": {
+      "predicted": "non_compliant",
+      "probabilities": {
+        "compliant": 0.0027783075347542763,
+        "non_compliant": 0.9932522177696228,
+        "neutral": 0.0039694351144135
+      }
+    },
+    "layer3_drift": {
+      "cusum_k": 2.0,
+      "cusum_h": 20,
+      "cusum_statistic_at_alarm_day": 20.35472936146624,
+      "alarm": true
+    },
+    "layer3_forecast": {
+      "current_observed_risk": 0.35708317477911306,
+      "forecast_7d": 0.4379700754769408,
+      "forecast_30d": 0.36446487729064625
+    },
+    "layer3_remediation_top4_domains": [
+      "network security",
+      "governance",
+      "security awareness",
+      "vulnerability management"
+    ],
+    "remediation_policy": "linear-Q contextual bandit (one-step)"
+  },
+  "runtime_seconds": 618
+}

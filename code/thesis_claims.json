@@ -1,0 +1,1362 @@
+[
+[
+"Table 5.1, 5.4, 5.7",
+"Rule baseline macro F1",
+"classifier.rule_baseline.macro_f1",
+0.776,
+0.0005,
+"results"
+],
+[
+"Table 5.1, 5.4, 5.7",
+"XGBoost macro precision",
+"classifier.xgboost.macro_precision",
+0.828,
+0.0005,
+"results"
+],
+[
+"Table 5.1, 5.4, 5.7",
+"XGBoost macro recall",
+"classifier.xgboost.macro_recall",
+0.826,
+0.0005,
+"results"
+],
+[
+"Table 5.1, 5.4, 5.7",
+"XGBoost macro F1",
+"classifier.xgboost.macro_f1",
+0.827,
+0.0005,
+"results"
+],
+[
+"Table 5.1, 5.4, 5.7",
+"XGBoost AUC-ROC",
+"classifier.xgboost.auc_ovr_macro",
+0.971,
+0.0005,
+"results"
+],
+[
+"Table 5.1, 5.4, 5.7",
+"XGBoost gain over rule baseline (pp)",
+"classifier.xgboost.f1_gain_over_rule_baseline_pp",
+5.1,
+0.05,
+"results"
+],
+[
+"5.4",
+"LogReg macro F1",
+"classifier.logreg.macro_f1",
+0.834,
+0.0005,
+"results"
+],
+[
+"5.4",
+"LogReg AUC-ROC",
+"classifier.logreg.auc_ovr_macro",
+0.973,
+0.0005,
+"results"
+],
+[
+"5.4",
+"F1 compliant",
+"classifier.xgboost.per_class_f1.compliant",
+0.839,
+0.0005,
+"results"
+],
+[
+"5.4",
+"F1 non-compliant",
+"classifier.xgboost.per_class_f1.non_compliant",
+0.838,
+0.0005,
+"results"
+],
+[
+"5.4",
+"F1 neutral",
+"classifier.xgboost.per_class_f1.neutral",
+0.803,
+0.0005,
+"results"
+],
+[
+"3.4.2.1, 5.2",
+"n_train",
+"classifier.n_train",
+34132,
+0.5,
+"results"
+],
+[
+"3.4.2.1, 5.2",
+"n_val",
+"classifier.n_val",
+7314,
+0.5,
+"results"
+],
+[
+"3.4.2.1, 5.2",
+"n_test",
+"classifier.n_test",
+7314,
+0.5,
+"results"
+],
+[
+"5.5.2",
+"neutral precision",
+"classifier.xgboost.per_class_precision.neutral",
+0.83,
+0.0005,
+"results"
+],
+[
+"5.5.2",
+"neutral recall",
+"classifier.xgboost.per_class_recall.neutral",
+0.779,
+0.0005,
+"results"
+],
+[
+"5.5.2",
+"non-compliant recall",
+"classifier.xgboost.per_class_recall.non_compliant",
+0.841,
+0.0005,
+"results"
+],
+[
+"5.5.2",
+"neutral -> compliant (count)",
+"classifier.xgboost.confusion_matrix.2.0",
+261,
+0.5,
+"results"
+],
+[
+"5.5.2",
+"neutral -> non-compliant (count)",
+"classifier.xgboost.confusion_matrix.2.1",
+223,
+0.5,
+"results"
+],
+[
+"5.5.2",
+"non-compliant -> compliant (count)",
+"classifier.xgboost.confusion_matrix.1.0",
+218,
+0.5,
+"results"
+],
+[
+"5.5.2",
+"non-compliant -> neutral (count)",
+"classifier.xgboost.confusion_matrix.1.2",
+188,
+0.5,
+"results"
+],
+[
+"Table 5.5",
+"CV fold 1",
+"classifier.xgboost.cv5_fold_macro_f1.0",
+0.829,
+0.0005,
+"results"
+],
+[
+"Table 5.5",
+"CV fold 2",
+"classifier.xgboost.cv5_fold_macro_f1.1",
+0.822,
+0.0005,
+"results"
+],
+[
+"Table 5.5",
+"CV fold 3",
+"classifier.xgboost.cv5_fold_macro_f1.2",
+0.818,
+0.0005,
+"results"
+],
+[
+"Table 5.5",
+"CV fold 4",
+"classifier.xgboost.cv5_fold_macro_f1.3",
+0.831,
+0.0005,
+"results"
+],
+[
+"Table 5.5",
+"CV fold 5",
+"classifier.xgboost.cv5_fold_macro_f1.4",
+0.828,
+0.0005,
+"results"
+],
+[
+"Table 5.5, 5.6, 5.7",
+"CV mean",
+"classifier.xgboost.cv5_macro_f1_mean",
+0.825,
+0.0005,
+"results"
+],
+[
+"Table 5.5, 5.6, 5.7",
+"CV SD",
+"classifier.xgboost.cv5_macro_f1_sd",
+0.005,
+0.0005,
+"results"
+],
+[
+"Table 3.2, 5.2, 5.4",
+"CUSUM k",
+"drift_and_mttd.cusum_k",
+2.0,
+1e-09,
+"results"
+],
+[
+"Table 3.2, 5.2, 5.4",
+"CUSUM h",
+"drift_and_mttd.cusum_h",
+20,
+1e-09,
+"results"
+],
+[
+"5.4",
+"recall",
+"drift_and_mttd.drift_detector_test.recall",
+1.0,
+0.0005,
+"results"
+],
+[
+"5.4, 5.5.1",
+"false alarms / series-year",
+"drift_and_mttd.drift_detector_test.false_alarms_per_series_year",
+0.047,
+0.0005,
+"results"
+],
+[
+"5.4, 5.5.1",
+"series-level FPR",
+"drift_and_mttd.drift_detector_test.fpr_series_level",
+0.059,
+0.0005,
+"results"
+],
+[
+"3.4.2.2",
+"injected gaps (200 orgs)",
+"audit_simulation.n_events",
+2268,
+0.5,
+"results"
+],
+[
+"5.4",
+"test events (30 orgs)",
+"drift_and_mttd.n_test_events",
+344,
+0.5,
+"results"
+],
+[
+"Table 5.3",
+"90 d: audit detection rate",
+"drift_and_mttd.mttd_by_audit_cycle.90.audit_detection_rate",
+0.63,
+0.005,
+"results"
+],
+[
+"Table 5.3",
+"90 d: MTTD audit (all)",
+"drift_and_mttd.mttd_by_audit_cycle.90.mttd_audit_days_all",
+38.5,
+0.05,
+"results"
+],
+[
+"Table 5.3",
+"90 d: MTTD pipeline (all)",
+"drift_and_mttd.mttd_by_audit_cycle.90.mttd_pipeline_days_all",
+9.3,
+0.05,
+"results"
+],
+[
+"Table 5.3",
+"90 d: reduction all %",
+"drift_and_mttd.mttd_by_audit_cycle.90.mttd_reduction_pct_all",
+75.9,
+0.05,
+"results"
+],
+[
+"Table 5.3",
+"90 d: CI low (all)",
+"drift_and_mttd.mttd_by_audit_cycle.90.reduction_ci95_pct_all.0",
+74.1,
+0.05,
+"results"
+],
+[
+"Table 5.3",
+"90 d: CI high (all)",
+"drift_and_mttd.mttd_by_audit_cycle.90.reduction_ci95_pct_all.1",
+77.6,
+0.05,
+"results"
+],
+[
+"Table 5.3",
+"90 d: reduction paired %",
+"drift_and_mttd.mttd_by_audit_cycle.90.mttd_reduction_pct",
+75.2,
+0.05,
+"results"
+],
+[
+"Table 5.3",
+"90 d: paired CI low",
+"drift_and_mttd.mttd_by_audit_cycle.90.reduction_ci95_pct.0",
+72.4,
+0.05,
+"results"
+],
+[
+"Table 5.3",
+"90 d: paired CI high",
+"drift_and_mttd.mttd_by_audit_cycle.90.reduction_ci95_pct.1",
+77.5,
+0.05,
+"results"
+],
+[
+"Table 5.3",
+"180 d: audit detection rate",
+"drift_and_mttd.mttd_by_audit_cycle.180.audit_detection_rate",
+0.3,
+0.005,
+"results"
+],
+[
+"Table 5.3",
+"180 d: MTTD audit (all)",
+"drift_and_mttd.mttd_by_audit_cycle.180.mttd_audit_days_all",
+48.7,
+0.05,
+"results"
+],
+[
+"Table 5.3",
+"180 d: MTTD pipeline (all)",
+"drift_and_mttd.mttd_by_audit_cycle.180.mttd_pipeline_days_all",
+9.3,
+0.05,
+"results"
+],
+[
+"Table 5.3",
+"180 d: reduction all %",
+"drift_and_mttd.mttd_by_audit_cycle.180.mttd_reduction_pct_all",
+81.0,
+0.05,
+"results"
+],
+[
+"Table 5.3",
+"180 d: CI low (all)",
+"drift_and_mttd.mttd_by_audit_cycle.180.reduction_ci95_pct_all.0",
+79.7,
+0.05,
+"results"
+],
+[
+"Table 5.3",
+"180 d: CI high (all)",
+"drift_and_mttd.mttd_by_audit_cycle.180.reduction_ci95_pct_all.1",
+82.2,
+0.05,
+"results"
+],
+[
+"Table 5.3",
+"180 d: reduction paired %",
+"drift_and_mttd.mttd_by_audit_cycle.180.mttd_reduction_pct",
+76.4,
+0.05,
+"results"
+],
+[
+"Table 5.3",
+"180 d: paired CI low",
+"drift_and_mttd.mttd_by_audit_cycle.180.reduction_ci95_pct.0",
+72.9,
+0.05,
+"results"
+],
+[
+"Table 5.3",
+"180 d: paired CI high",
+"drift_and_mttd.mttd_by_audit_cycle.180.reduction_ci95_pct.1",
+79.1,
+0.05,
+"results"
+],
+[
+"Table 5.3",
+"365 d: audit detection rate",
+"drift_and_mttd.mttd_by_audit_cycle.365.audit_detection_rate",
+0.16,
+0.005,
+"results"
+],
+[
+"Table 5.3",
+"365 d: MTTD audit (all)",
+"drift_and_mttd.mttd_by_audit_cycle.365.mttd_audit_days_all",
+54.3,
+0.05,
+"results"
+],
+[
+"Table 5.3",
+"365 d: MTTD pipeline (all)",
+"drift_and_mttd.mttd_by_audit_cycle.365.mttd_pipeline_days_all",
+9.3,
+0.05,
+"results"
+],
+[
+"Table 5.3",
+"365 d: reduction all %",
+"drift_and_mttd.mttd_by_audit_cycle.365.mttd_reduction_pct_all",
+82.9,
+0.05,
+"results"
+],
+[
+"Table 5.3",
+"365 d: CI low (all)",
+"drift_and_mttd.mttd_by_audit_cycle.365.reduction_ci95_pct_all.0",
+82.0,
+0.05,
+"results"
+],
+[
+"Table 5.3",
+"365 d: CI high (all)",
+"drift_and_mttd.mttd_by_audit_cycle.365.reduction_ci95_pct_all.1",
+83.8,
+0.05,
+"results"
+],
+[
+"Table 5.3",
+"365 d: reduction paired %",
+"drift_and_mttd.mttd_by_audit_cycle.365.mttd_reduction_pct",
+77.8,
+0.05,
+"results"
+],
+[
+"Table 5.3",
+"365 d: paired CI low",
+"drift_and_mttd.mttd_by_audit_cycle.365.reduction_ci95_pct.0",
+72.9,
+0.05,
+"results"
+],
+[
+"Table 5.3",
+"365 d: paired CI high",
+"drift_and_mttd.mttd_by_audit_cycle.365.reduction_ci95_pct.1",
+81.7,
+0.05,
+"results"
+],
+[
+"5.4",
+"paired events (180 d)",
+"drift_and_mttd.mttd_by_audit_cycle.180.n_paired_events",
+104,
+0.5,
+"results"
+],
+[
+"Table 5.3b",
+"fixed: recall",
+"detector_comparison.fixed.recall",
+1.0,
+0.0005,
+"results"
+],
+[
+"Table 5.3b",
+"fixed: false alarms/series-year",
+"detector_comparison.fixed.false_alarms_per_series_year",
+0.044,
+0.0005,
+"results"
+],
+[
+"Table 5.3b",
+"fixed: MTTD (d)",
+"detector_comparison.fixed.mttd_days_all",
+6.2,
+0.05,
+"results"
+],
+[
+"Table 5.3b",
+"fixed: reduction %",
+"detector_comparison.fixed.reduction_vs_180d_pct",
+87.3,
+0.05,
+"results"
+],
+[
+"Table 5.3b",
+"fixed: CI low",
+"detector_comparison.fixed.reduction_ci95_pct.0",
+86.4,
+0.05,
+"results"
+],
+[
+"Table 5.3b",
+"fixed: CI high",
+"detector_comparison.fixed.reduction_ci95_pct.1",
+88.2,
+0.05,
+"results"
+],
+[
+"Table 5.3b",
+"ewma: recall",
+"detector_comparison.ewma.recall",
+1.0,
+0.0005,
+"results"
+],
+[
+"Table 5.3b",
+"ewma: false alarms/series-year",
+"detector_comparison.ewma.false_alarms_per_series_year",
+0.117,
+0.0005,
+"results"
+],
+[
+"Table 5.3b",
+"ewma: MTTD (d)",
+"detector_comparison.ewma.mttd_days_all",
+6.7,
+0.05,
+"results"
+],
+[
+"Table 5.3b",
+"ewma: reduction %",
+"detector_comparison.ewma.reduction_vs_180d_pct",
+86.3,
+0.05,
+"results"
+],
+[
+"Table 5.3b",
+"ewma: CI low",
+"detector_comparison.ewma.reduction_ci95_pct.0",
+85.4,
+0.05,
+"results"
+],
+[
+"Table 5.3b",
+"ewma: CI high",
+"detector_comparison.ewma.reduction_ci95_pct.1",
+87.3,
+0.05,
+"results"
+],
+[
+"Table 5.3b",
+"cusum: recall",
+"detector_comparison.cusum.recall",
+1.0,
+0.0005,
+"results"
+],
+[
+"Table 5.3b",
+"cusum: false alarms/series-year",
+"detector_comparison.cusum.false_alarms_per_series_year",
+0.047,
+0.0005,
+"results"
+],
+[
+"Table 5.3b",
+"cusum: MTTD (d)",
+"detector_comparison.cusum.mttd_days_all",
+9.3,
+0.05,
+"results"
+],
+[
+"Table 5.3b",
+"cusum: reduction %",
+"detector_comparison.cusum.reduction_vs_180d_pct",
+81.0,
+0.05,
+"results"
+],
+[
+"Table 5.3b",
+"cusum: CI low",
+"detector_comparison.cusum.reduction_ci95_pct.0",
+79.7,
+0.05,
+"results"
+],
+[
+"Table 5.3b",
+"cusum: CI high",
+"detector_comparison.cusum.reduction_ci95_pct.1",
+82.2,
+0.05,
+"results"
+],
+[
+"Table 5.3c",
+"gap 0.05 / noise 0.01: recall",
+"sensitivity_cusum.0.05|0.01.recall",
+0.7,
+0.005,
+"results"
+],
+[
+"Table 5.3c",
+"gap 0.05 / noise 0.01: MTTD",
+"sensitivity_cusum.0.05|0.01.mttd_days_all",
+34.4,
+0.05,
+"results"
+],
+[
+"Table 5.3c",
+"gap 0.05 / noise 0.02: recall",
+"sensitivity_cusum.0.05|0.02.recall",
+0.42,
+0.005,
+"results"
+],
+[
+"Table 5.3c",
+"gap 0.05 / noise 0.02: MTTD",
+"sensitivity_cusum.0.05|0.02.mttd_days_all",
+47.5,
+0.05,
+"results"
+],
+[
+"Table 5.3c",
+"gap 0.05 / noise 0.04: recall",
+"sensitivity_cusum.0.05|0.04.recall",
+0.03,
+0.005,
+"results"
+],
+[
+"Table 5.3c",
+"gap 0.05 / noise 0.04: MTTD",
+"sensitivity_cusum.0.05|0.04.mttd_days_all",
+62.2,
+0.05,
+"results"
+],
+[
+"Table 5.3c",
+"gap 0.05 / noise 0.08: recall",
+"sensitivity_cusum.0.05|0.08.recall",
+0.0,
+0.005,
+"results"
+],
+[
+"Table 5.3c",
+"gap 0.05 / noise 0.08: MTTD",
+"sensitivity_cusum.0.05|0.08.mttd_days_all",
+62.8,
+0.05,
+"results"
+],
+[
+"Table 5.3c",
+"gap 0.1 / noise 0.01: recall",
+"sensitivity_cusum.0.1|0.01.recall",
+0.98,
+0.005,
+"results"
+],
+[
+"Table 5.3c",
+"gap 0.1 / noise 0.01: MTTD",
+"sensitivity_cusum.0.1|0.01.mttd_days_all",
+15.4,
+0.05,
+"results"
+],
+[
+"Table 5.3c",
+"gap 0.1 / noise 0.02: recall",
+"sensitivity_cusum.0.1|0.02.recall",
+0.94,
+0.005,
+"results"
+],
+[
+"Table 5.3c",
+"gap 0.1 / noise 0.02: MTTD",
+"sensitivity_cusum.0.1|0.02.mttd_days_all",
+21.4,
+0.05,
+"results"
+],
+[
+"Table 5.3c",
+"gap 0.1 / noise 0.04: recall",
+"sensitivity_cusum.0.1|0.04.recall",
+0.51,
+0.005,
+"results"
+],
+[
+"Table 5.3c",
+"gap 0.1 / noise 0.04: MTTD",
+"sensitivity_cusum.0.1|0.04.mttd_days_all",
+45.0,
+0.05,
+"results"
+],
+[
+"Table 5.3c",
+"gap 0.1 / noise 0.08: recall",
+"sensitivity_cusum.0.1|0.08.recall",
+0.01,
+0.005,
+"results"
+],
+[
+"Table 5.3c",
+"gap 0.1 / noise 0.08: MTTD",
+"sensitivity_cusum.0.1|0.08.mttd_days_all",
+62.4,
+0.05,
+"results"
+],
+[
+"Table 5.3c",
+"gap 0.15 / noise 0.01: recall",
+"sensitivity_cusum.0.15|0.01.recall",
+1.0,
+0.005,
+"results"
+],
+[
+"Table 5.3c",
+"gap 0.15 / noise 0.01: MTTD",
+"sensitivity_cusum.0.15|0.01.mttd_days_all",
+10.4,
+0.05,
+"results"
+],
+[
+"Table 5.3c",
+"gap 0.15 / noise 0.02: recall",
+"sensitivity_cusum.0.15|0.02.recall",
+1.0,
+0.005,
+"results"
+],
+[
+"Table 5.3c",
+"gap 0.15 / noise 0.02: MTTD",
+"sensitivity_cusum.0.15|0.02.mttd_days_all",
+13.2,
+0.05,
+"results"
+],
+[
+"Table 5.3c",
+"gap 0.15 / noise 0.04: recall",
+"sensitivity_cusum.0.15|0.04.recall",
+0.93,
+0.005,
+"results"
+],
+[
+"Table 5.3c",
+"gap 0.15 / noise 0.04: MTTD",
+"sensitivity_cusum.0.15|0.04.mttd_days_all",
+23.9,
+0.05,
+"results"
+],
+[
+"Table 5.3c",
+"gap 0.15 / noise 0.08: recall",
+"sensitivity_cusum.0.15|0.08.recall",
+0.16,
+0.005,
+"results"
+],
+[
+"Table 5.3c",
+"gap 0.15 / noise 0.08: MTTD",
+"sensitivity_cusum.0.15|0.08.mttd_days_all",
+57.9,
+0.05,
+"results"
+],
+[
+"Table 5.3c",
+"gap 0.25 / noise 0.01: recall",
+"sensitivity_cusum.0.25|0.01.recall",
+1.0,
+0.005,
+"results"
+],
+[
+"Table 5.3c",
+"gap 0.25 / noise 0.01: MTTD",
+"sensitivity_cusum.0.25|0.01.mttd_days_all",
+7.7,
+0.05,
+"results"
+],
+[
+"Table 5.3c",
+"gap 0.25 / noise 0.02: recall",
+"sensitivity_cusum.0.25|0.02.recall",
+1.0,
+0.005,
+"results"
+],
+[
+"Table 5.3c",
+"gap 0.25 / noise 0.02: MTTD",
+"sensitivity_cusum.0.25|0.02.mttd_days_all",
+9.3,
+0.05,
+"results"
+],
+[
+"Table 5.3c",
+"gap 0.25 / noise 0.04: recall",
+"sensitivity_cusum.0.25|0.04.recall",
+1.0,
+0.005,
+"results"
+],
+[
+"Table 5.3c",
+"gap 0.25 / noise 0.04: MTTD",
+"sensitivity_cusum.0.25|0.04.mttd_days_all",
+13.5,
+0.05,
+"results"
+],
+[
+"Table 5.3c",
+"gap 0.25 / noise 0.08: recall",
+"sensitivity_cusum.0.25|0.08.recall",
+0.88,
+0.005,
+"results"
+],
+[
+"Table 5.3c",
+"gap 0.25 / noise 0.08: MTTD",
+"sensitivity_cusum.0.25|0.08.mttd_days_all",
+28.2,
+0.05,
+"results"
+],
+[
+"Table 5.3c",
+"gap 0.4 / noise 0.01: recall",
+"sensitivity_cusum.0.4|0.01.recall",
+1.0,
+0.005,
+"results"
+],
+[
+"Table 5.3c",
+"gap 0.4 / noise 0.01: MTTD",
+"sensitivity_cusum.0.4|0.01.mttd_days_all",
+5.7,
+0.05,
+"results"
+],
+[
+"Table 5.3c",
+"gap 0.4 / noise 0.02: recall",
+"sensitivity_cusum.0.4|0.02.recall",
+1.0,
+0.005,
+"results"
+],
+[
+"Table 5.3c",
+"gap 0.4 / noise 0.02: MTTD",
+"sensitivity_cusum.0.4|0.02.mttd_days_all",
+7.0,
+0.05,
+"results"
+],
+[
+"Table 5.3c",
+"gap 0.4 / noise 0.04: recall",
+"sensitivity_cusum.0.4|0.04.recall",
+1.0,
+0.005,
+"results"
+],
+[
+"Table 5.3c",
+"gap 0.4 / noise 0.04: MTTD",
+"sensitivity_cusum.0.4|0.04.mttd_days_all",
+9.7,
+0.05,
+"results"
+],
+[
+"Table 5.3c",
+"gap 0.4 / noise 0.08: recall",
+"sensitivity_cusum.0.4|0.08.recall",
+1.0,
+0.005,
+"results"
+],
+[
+"Table 5.3c",
+"gap 0.4 / noise 0.08: MTTD",
+"sensitivity_cusum.0.4|0.08.mttd_days_all",
+15.2,
+0.05,
+"results"
+],
+[
+"5.1, 5.4",
+"MAE model 7 d",
+"forecaster.h7.mae_model",
+0.0307,
+5e-05,
+"results"
+],
+[
+"5.1, 5.4",
+"MAE moving avg 7 d",
+"forecaster.h7.mae_moving_avg7",
+0.0356,
+5e-05,
+"results"
+],
+[
+"5.4",
+"MAE persistence 7 d",
+"forecaster.h7.mae_persistence",
+0.0357,
+5e-05,
+"results"
+],
+[
+"5.4",
+"improvement vs MA 7 d (%)",
+"forecaster.h7.improvement_vs_moving_avg_pct",
+13.8,
+0.05,
+"results"
+],
+[
+"5.1, 5.4",
+"MAE model 14 d",
+"forecaster.h14.mae_model",
+0.0412,
+5e-05,
+"results"
+],
+[
+"5.1, 5.4",
+"MAE moving avg 14 d",
+"forecaster.h14.mae_moving_avg7",
+0.046,
+5e-05,
+"results"
+],
+[
+"5.4",
+"MAE persistence 14 d",
+"forecaster.h14.mae_persistence",
+0.0465,
+5e-05,
+"results"
+],
+[
+"5.4",
+"improvement vs MA 14 d (%)",
+"forecaster.h14.improvement_vs_moving_avg_pct",
+10.4,
+0.05,
+"results"
+],
+[
+"5.1, 5.4",
+"MAE model 30 d",
+"forecaster.h30.mae_model",
+0.0625,
+5e-05,
+"results"
+],
+[
+"5.1, 5.4",
+"MAE moving avg 30 d",
+"forecaster.h30.mae_moving_avg7",
+0.0653,
+5e-05,
+"results"
+],
+[
+"5.4",
+"MAE persistence 30 d",
+"forecaster.h30.mae_persistence",
+0.0665,
+5e-05,
+"results"
+],
+[
+"5.4",
+"improvement vs MA 30 d (%)",
+"forecaster.h30.improvement_vs_moving_avg_pct",
+4.3,
+0.05,
+"results"
+],
+[
+"Table 5.2",
+"fixed_order: risk reduction",
+"remediation.mean_total_risk_reduction.fixed_order",
+0.317,
+5e-05,
+"results"
+],
+[
+"Table 5.2",
+"fixed_order: score gain (points)",
+"remediation.compliance_score_gain_points_mean.fixed_order",
+2.64,
+0.005,
+"results"
+],
+[
+"Table 5.2",
+"random: risk reduction",
+"remediation.mean_total_risk_reduction.random",
+0.3739,
+5e-05,
+"results"
+],
+[
+"Table 5.2",
+"random: score gain (points)",
+"remediation.compliance_score_gain_points_mean.random",
+3.12,
+0.005,
+"results"
+],
+[
+"Table 5.2",
+"highest_risk: risk reduction",
+"remediation.mean_total_risk_reduction.highest_risk",
+0.6199,
+5e-05,
+"results"
+],
+[
+"Table 5.2",
+"highest_risk: score gain (points)",
+"remediation.compliance_score_gain_points_mean.highest_risk",
+5.17,
+0.005,
+"results"
+],
+[
+"Table 5.2",
+"agent: risk reduction",
+"remediation.mean_total_risk_reduction.agent",
+0.6645,
+5e-05,
+"results"
+],
+[
+"Table 5.2",
+"agent: score gain (points)",
+"remediation.compliance_score_gain_points_mean.agent",
+5.54,
+0.005,
+"results"
+],
+[
+"Table 5.2",
+"oracle: risk reduction",
+"remediation.mean_total_risk_reduction.oracle",
+0.6646,
+5e-05,
+"results"
+],
+[
+"Table 5.2",
+"oracle: score gain (points)",
+"remediation.compliance_score_gain_points_mean.oracle",
+5.54,
+0.005,
+"results"
+],
+[
+"5.1, 5.4",
+"agent vs fixed order %",
+"remediation.agent_improvement_over_fixed_order_pct",
+109.6,
+0.05,
+"results"
+],
+[
+"5.4",
+"agent vs random %",
+"remediation.agent_improvement_over_random_pct",
+77.7,
+0.05,
+"results"
+],
+[
+"5.1, 5.4",
+"agent vs highest-risk %",
+"remediation.agent_improvement_over_highest_risk_pct",
+7.2,
+0.05,
+"results"
+],
+[
+"5.4",
+"learned effectiveness correlation",
+"remediation.learned_effectiveness_corr_with_truth",
+0.9998,
+5e-05,
+"results"
+],
+[
+"note 5 / 3.4, 5.1",
+"controls extracted",
+"layer1.extraction.n_controls_level3",
+52,
+0.5,
+"results"
+],
+[
+"note 5",
+"control recall %",
+"layer1.extraction.control_recall_pct",
+45.6,
+0.05,
+"results"
+],
+[
+"note 5",
+"sub-controls extracted",
+"layer1.extraction.n_subcontrols_level4",
+96,
+0.5,
+"results"
+],
+[
+"Table 5.4 / 3.4.2.1",
+"labeled tweets with majority",
+"preparation.n_labeled",
+36080,
+0.5,
+"cybattt"
+],
+[
+"Table 5.4 / 3.4.2.1",
+"after cleaning and de-duplication",
+"preparation.n_after_dedup",
+31434,
+0.5,
+"cybattt"
+],
+[
+"Table 5.4 / 3.4.2.1",
+"not news",
+"preparation.class_counts.not_news",
+27642,
+0.5,
+"cybattt"
+],
+[
+"Table 5.4 / 3.4.2.1",
+"normal news",
+"preparation.class_counts.normal_news",
+3151,
+0.5,
+"cybattt"
+],
+[
+"Table 5.4 / 3.4.2.1",
+"high-risk news",
+"preparation.class_counts.high_risk_news",
+641,
+0.5,
+"cybattt"
+],
+[
+"Table 5.4 / 3.4.2.1",
+"Fleiss kappa",
+"agreement.fleiss_majority_labeled",
+0.916,
+0.0005,
+"cybattt"
+],
+[
+"Table 5.4 / 3.4.2.1",
+"train",
+"classification.n_train",
+22003,
+0.5,
+"cybattt"
+],
+[
+"Table 5.4 / 3.4.2.1",
+"validation",
+"classification.n_val",
+4715,
+0.5,
+"cybattt"
+],
+[
+"Table 5.4 / 3.4.2.1",
+"test",
+"classification.n_test",
+4716,
+0.5,
+"cybattt"
+],
+[
+"Table 5.4 / 3.4.2.1",
+"majority baseline F1",
+"classification.majority_baseline_macro_f1",
+0.312,
+0.0005,
+"cybattt"
+],
+[
+"Table 5.4 / 3.4.2.1",
+"XGBoost macro F1",
+"classification.xgboost.macro_f1",
+0.852,
+0.0005,
+"cybattt"
+],
+[
+"Table 5.4 / 3.4.2.1",
+"XGBoost AUC",
+"classification.xgboost.auc_ovr_macro",
+0.987,
+0.0005,
+"cybattt"
+],
+[
+"Table 5.4 / 3.4.2.1",
+"LogReg macro F1",
+"classification.logreg.macro_f1",
+0.865,
+0.0005,
+"cybattt"
+],
+[
+"Table 5.4 / 3.4.2.1",
+"LogReg AUC",
+"classification.logreg.auc_ovr_macro",
+0.988,
+0.0005,
+"cybattt"
+],
+[
+"Table 5.4 / 3.4.2.1",
+"XGBoost F1 high-risk",
+"classification.xgboost.per_class_f1.high_risk_news",
+0.759,
+0.0005,
+"cybattt"
+],
+[
+"Table 5.4 / 3.4.2.1",
+"XGBoost F1 normal",
+"classification.xgboost.per_class_f1.normal_news",
+0.816,
+0.0005,
+"cybattt"
+],
+[
+"Table 5.4 / 3.4.2.1",
+"XGBoost F1 not news",
+"classification.xgboost.per_class_f1.not_news",
+0.982,
+0.0005,
+"cybattt"
+],
+[
+"Table 5.4 / 3.4.2.1",
+"CV mean",
+"classification.xgboost.cv5_mean",
+0.845,
+0.0005,
+"cybattt"
+],
+[
+"Table 5.4 / 3.4.2.1",
+"CV SD",
+"classification.xgboost.cv5_sd",
+0.014,
+0.0005,
+"cybattt"
+],
+[
+"Table 5.4 / 3.4.2.1",
+"high-risk recall",
+"classification.xgboost.high_risk_recall",
+0.656,
+0.0005,
+"cybattt"
+]
+]
