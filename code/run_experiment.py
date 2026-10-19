@@ -70,7 +70,7 @@ def run_classifier(df, seed, quick, outdir):
     res["xgboost"]["f1_gain_over_rule_baseline_pp"] = 100 * (res["xgboost"]["macro_f1"] - res["rule_baseline"]["macro_f1"])
     cm = confusion_matrix(y_te, pred); res["xgboost"]["confusion_matrix"] = cm.tolist()
 
-    # 5-fold stratified CV on train+val (XGBoost, same settings) -- the five fold values of Table 5.5 come from here
+    # 5-fold stratified CV on train+val (XGBoost, same settings) -- the five fold values of thesis Table 5.8 come from here
     Xall = pd.concat([X_tr, X_va]); yall = pd.concat([y_tr, y_va]); f1s = []
     for tr, te in StratifiedKFold(5, shuffle=True, random_state=seed).split(Xall, yall):
         v = mk_vec(); a = v.fit_transform(Xall.iloc[tr]); b = v.transform(Xall.iloc[te])
@@ -223,19 +223,19 @@ def md_tables(R):
           f"| XGBoost | {x['macro_precision']:.3f} | {x['macro_recall']:.3f} | {x['macro_f1']:.3f} | {x['auc_ovr_macro']:.3f} |",
           f"\nSplit {c['n_train']}/{c['n_val']}/{c['n_test']}. XGBoost per-class F1: " + ", ".join(f"{k} {v:.3f}" for k, v in x["per_class_f1"].items()) +
           f"; gain over rule baseline {x['f1_gain_over_rule_baseline_pp']:.1f} pp. Confusion matrix (rows = true compliant / non-compliant / neutral): {x['confusion_matrix']}.\n",
-          "### 5-fold CV (Table 5.5)\n", "| Fold | Macro F1 |", "|---|---|"]
+          "### 5-fold CV (thesis Table 5.8)\n", "| Fold | Macro F1 |", "|---|---|"]
     L += [f"| {i} | {v:.3f} |" for i, v in enumerate(x["cv5_fold_macro_f1"], 1)] + [f"| Mean +/- SD | {x['cv5_macro_f1_mean']:.3f} +/- {x['cv5_macro_f1_sd']:.3f} |", "",
           "## Drift detector (CUSUM) and MTTD (test organisations)\n",
           f"CUSUM k={d['cusum_k']}, h={d['cusum_h']} (tuned on validation orgs; false-alarm limit 0.05 per series-year met on validation: {d['far_constraint_met_on_validation']}). Event recall {d['drift_detector_test']['recall']:.3f}; false alarms per series-year {d['drift_detector_test']['false_alarms_per_series_year']:.3f}; series-level FPR {d['drift_detector_test']['fpr_series_level']:.3f}; {d['n_test_events']} test events.\n",
           "| Audit cycle | Detection rate audit / pipeline | MTTD audit, all (d) | MTTD pipeline, all (d) | Reduction %, all [95% CI] | Reduction %, paired [95% CI] | Paired n |", "|---|---|---|---|---|---|---|"]
     for k, v in d["mttd_by_audit_cycle"].items():
         L.append(f"| {k} d | {v['audit_detection_rate']:.2f} / {v['pipeline_detection_rate']:.2f} | {v['mttd_audit_days_all']:.1f} | {v['mttd_pipeline_days_all']:.1f} | {v['mttd_reduction_pct_all']:.1f} [{v['reduction_ci95_pct_all'][0]:.1f}, {v['reduction_ci95_pct_all'][1]:.1f}] | {v['mttd_reduction_pct']:.1f} [{v['reduction_ci95_pct'][0]:.1f}, {v['reduction_ci95_pct'][1]:.1f}] | {v['n_paired_events']} |")
-    L += ["\n### Equal-frequency detectors at a common false-alarm budget (Table 5.3b; test orgs; reduction vs 180-day audit)\n",
+    L += ["\n### Equal-frequency detectors at a common false-alarm budget (thesis Table 5.4; test orgs; reduction vs 180-day audit)\n",
           "| Detector | Parameters | Recall | False alarms / series-year | MTTD, all events (d) | Reduction % [95% CI] |", "|---|---|---|---|---|---|"]
     for k in ["fixed", "ewma", "cusum"]:
         v = b[k]; L.append(f"| {v['label']} | {v['params']} | {v['recall']:.3f} | {v['false_alarms_per_series_year']:.3f} | {v['mttd_days_all']:.1f} | {v['reduction_ci95_pct'] and v['reduction_vs_180d_pct']:.1f} [{v['reduction_ci95_pct'][0]:.1f}, {v['reduction_ci95_pct'][1]:.1f}] |")
     mags = sorted({v["mag"] for v in g.values()}); sig = sorted({v["noise_sd"] for v in g.values()})
-    L += ["\n### Sensitivity of CUSUM, k and h fixed (Table 5.3c): recall / MTTD (days, all events) / false alarms per series-year\n",
+    L += ["\n### Sensitivity of CUSUM, k and h fixed (thesis Table 5.5): recall / MTTD (days, all events) / false alarms per series-year\n",
           "| Gap magnitude \\ noise SD | " + " | ".join(str(s) for s in sig) + " |", "|---|" + "---|" * len(sig)]
     for m_ in mags:
         L.append(f"| {m_} | " + " | ".join(f"{g[f'{m_}|{s}']['recall']:.2f} / {g[f'{m_}|{s}']['mttd_days_all']:.1f} / {g[f'{m_}|{s}']['false_alarms_per_series_year']:.3f}" for s in sig) + " |")

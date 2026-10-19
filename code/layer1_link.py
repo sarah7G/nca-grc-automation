@@ -17,7 +17,7 @@ import numpy as np, pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from common import DOMAINS, ECC_MAIN, ECC_SUB, SUB_TO_DOMAIN
 
-OFFICIAL = {"controls": 114, "subcontrols": 105}      # numbers stated in ECC-1:2018 (as used in the thesis notes)
+OFFICIAL = {"controls": 114, "subcontrols": 105}      # official totals of ECC-1:2018
 INLINE_ID = re.compile(r"\b\d-\d{1,2}-\d{1,2}(?:-\d)?\b")
 
 
@@ -40,8 +40,8 @@ def extraction_report(c):
             "records_with_inline_ids_(merged_controls)": int(inline.sum()),
             "records_whose_pdf_domain_is_page_header": int(c.domain.str.contains("Document Classification").sum()),
             "median_text_chars": float(c.text.str.len().median()), "max_text_chars": int(c.text.str.len().max()),
-            "note": "Precision of the control ids (reported as 100% in the thesis notes) needs the source PDF / a hand-annotated gold "
-                    "file and cannot be recomputed from controls.csv alone."}
+            "note": "Identifier precision/recall and text fidelity against the reference set built from the ECC-1:2018 PDF "
+                    "are computed by layer1_evaluate.py (layer1_ecc/layer1_text_eval.json)."}
 
 
 def domain_table(c):

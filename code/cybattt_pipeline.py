@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-CybAttT external-validation experiment (thesis Sections 3.4.2.1 and 5.4, Table 5.4).
+CybAttT external-validation experiment (thesis Sections 3.4.2.1 and 5.4, Table 5.7, Figure 5.4).
 
 DATA : df_m.csv from https://github.com/HudaLughbi/CybAttT (columns text, anottator1-3, majority). Not redistributed here:
         download it first (see README).  --selftest runs the code on a tiny FAKE file only to check that it executes.

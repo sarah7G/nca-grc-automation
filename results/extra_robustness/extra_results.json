@@ -295,7 +295,7 @@
       1,
       4
     ],
-    "note": "These checks do not give precision. Precision/recall against the source needs the ECC-1:2018 PDF or a hand-annotated gold.csv (layer1_extract.py --gold)."
+    "note": "These checks do not give precision. Identifier precision/recall against the reference set built from the ECC-1:2018 PDF are computed by layer1_evaluate.py (layer1_ecc/layer1_text_eval.json)."
   },
   "I_traced_record_executed": {
     "note": "Executed run on synthetic data. The post and the audit series are joined only through the shared simulated domain; this shows that module outputs can be chained in one record, not that the post is evidence about the simulated organisation.",

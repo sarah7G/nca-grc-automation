@@ -47,7 +47,7 @@ def mttd_all(ev):
 
 
 def compare_detectors(obs, events, n_orgs, seed, cusum_params=None):
-    """Table 5.3b. If cusum_params is given (k, h selected by the main experiment) they are reused so row 'CUSUM' equals Table 5.3."""
+    """Thesis Table 5.4. If cusum_params is given (k, h selected by the main experiment) they are reused so row 'CUSUM' equals Table 5.6."""
     val, test = split_orgs(n_orgs, seed); test = list(test)
     out = {}
     d_a = audit_delays(obs, events, test, 180, np.random.default_rng(seed + 180))     # identical audit delays for all detectors
@@ -67,7 +67,7 @@ def compare_detectors(obs, events, n_orgs, seed, cusum_params=None):
 
 
 def sensitivity_grid(n_orgs, seed, k, h, mags=(0.05, 0.10, 0.15, 0.25, 0.40), sigmas=(0.01, 0.02, 0.04, 0.08)):
-    """Table 5.3c. New simulation per cell (all n_orgs organisations, cell-specific seed); detector fixed at (k, h)."""
+    """Thesis Table 5.5. New simulation per cell (all n_orgs organisations, cell-specific seed); detector fixed at (k, h)."""
     cells = {}
     for i, m_ in enumerate(mags):
         for j, s_ in enumerate(sigmas):

@@ -300,7 +300,7 @@ if __name__ == "__main__":
                                 "ids_with_unknown_ecc_subdomain": int((~kb.ecc_sub.isin(common.ECC_SUB)).sum()),
                                 "ids_with_unknown_main_domain": int((~kb.control_id.str.extract(r"^(\d+)-")[0].isin(common.ECC_MAIN)).sum()),
                                 "level3_per_subdomain_min_max": [int(kb[kb.level == 3].groupby("ecc_sub").size().min()), int(kb[kb.level == 3].groupby("ecc_sub").size().max())],
-                                "note": "These checks do not give precision. Precision/recall against the source needs the ECC-1:2018 PDF or a hand-annotated gold.csv (layer1_extract.py --gold)."}
+                                "note": "These checks do not give precision. Identifier precision/recall against the reference set built from the ECC-1:2018 PDF are computed by layer1_evaluate.py (layer1_ecc/layer1_text_eval.json)."}
 
     # ---- I. executed traced record
     val, test = split_orgs(a.n_orgs, a.seed); cp = json.load(open(a.main_results))["drift_and_mttd"] if os.path.exists(a.main_results) else {"cusum_k": 2.0, "cusum_h": 20}

@@ -31,7 +31,7 @@
       "records_whose_pdf_domain_is_page_header": 101,
       "median_text_chars": 97.0,
       "max_text_chars": 3100,
-      "note": "Precision of the control ids (reported as 100% in the thesis notes) needs the source PDF / a hand-annotated gold file and cannot be recomputed from controls.csv alone."
+      "note": "Identifier precision/recall and text fidelity against the reference set built from the ECC-1:2018 PDF are computed by layer1_evaluate.py (layer1_ecc/layer1_text_eval.json)."
     },
     "domain_table": [
       {

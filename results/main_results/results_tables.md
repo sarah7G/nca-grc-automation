@@ -49,7 +49,7 @@ Chance level 1/12 = 0.083.
 
 Split 34132/7314/7314. XGBoost per-class F1: compliant 0.839, non_compliant 0.838, neutral 0.803; gain over rule baseline 5.1 pp. Confusion matrix (rows = true compliant / non-compliant / neutral): [[2206, 204, 162], [218, 2147, 188], [261, 223, 1705]].
 
-### 5-fold CV (Table 5.5)
+### 5-fold CV (thesis Table 5.8)
 
 | Fold | Macro F1 |
 |---|---|
@@ -70,7 +70,7 @@ CUSUM k=2.0, h=20 (tuned on validation orgs; false-alarm limit 0.05 per series-y
 | 180 d | 0.30 / 1.00 | 48.7 | 9.3 | 81.0 [79.7, 82.2] | 76.4 [72.9, 79.1] | 104 |
 | 365 d | 0.16 / 1.00 | 54.3 | 9.3 | 82.9 [82.0, 83.8] | 77.8 [72.9, 81.7] | 55 |
 
-### Equal-frequency detectors at a common false-alarm budget (Table 5.3b; test orgs; reduction vs 180-day audit)
+### Equal-frequency detectors at a common false-alarm budget (thesis Table 5.4; test orgs; reduction vs 180-day audit)
 
 | Detector | Parameters | Recall | False alarms / series-year | MTTD, all events (d) | Reduction % [95% CI] |
 |---|---|---|---|---|---|
@@ -78,7 +78,7 @@ CUSUM k=2.0, h=20 (tuned on validation orgs; false-alarm limit 0.05 per series-y
 | EWMA control chart | {'lam': 0.3, 'L': 8.0} | 1.000 | 0.117 | 6.7 | 86.3 [85.4, 87.3] |
 | CUSUM | {'k': 2.0, 'h': 20} | 1.000 | 0.047 | 9.3 | 81.0 [79.7, 82.2] |
 
-### Sensitivity of CUSUM, k and h fixed (Table 5.3c): recall / MTTD (days, all events) / false alarms per series-year
+### Sensitivity of CUSUM, k and h fixed (thesis Table 5.5): recall / MTTD (days, all events) / false alarms per series-year
 
 | Gap magnitude \ noise SD | 0.01 | 0.02 | 0.04 | 0.08 |
 |---|---|---|---|---|

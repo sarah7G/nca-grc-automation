@@ -1,17 +1,17 @@
 # Code
 
-All experiments use seed 42. Every number in Chapter 5 of the thesis is produced by the scripts below.
+All experiments use seed 42. Every number in Chapter 5 of the thesis, including the robustness tests of Section 5.6, is produced by the scripts below; `verify_thesis.py` compares 279 of them with the code output (`../results/main_results/reconciliation.md`).
 
 ## Environment
 
-Python 3.12.3 with the versions pinned in `requirements.txt`
+Main experiments: Python 3.12.3; robustness analyses: Python 3.13.16. Both with the versions pinned in `requirements.txt`
 (scikit-learn 1.8.0, xgboost 3.4.1, numpy 2.4.4, pandas 3.0.2, matplotlib 3.10.8), plus `pdfplumber` for Layer 1.
 Other library versions may change XGBoost and cross-validation results in the third decimal place.
 
 ```bash
 python -m pip install -r requirements.txt pdfplumber
 ./run_all.sh     # main experiments -> results/
-./run_extra.sh   # robustness analyses -> results_extra/, Layer 1 extraction -> layer1_out/
+./run_extra.sh   # robustness analyses -> results_extra/, Layer 1 extraction -> layer1_out/, Layer 1 evaluation -> ../layer1_ecc/
 ```
 
 ## Files
@@ -24,9 +24,10 @@ python -m pip install -r requirements.txt pdfplumber
 | `extra_analysis.py` | Robustness analyses (Section 5.6): template-family and domain held-out splits, paraphrase test, bootstrap intervals, forecaster variability, reward regimes |
 | `layer1_extract.py` | Rule-based extraction of controls and sub-controls from ECC-1:2018 (output: `controls.csv`) |
 | `layer1_extract_coord_controls.py`, `layer1_extract_coord_subcontrols.py` | Coordinate-based PDF reader used to build the Layer 1 reference set |
+| `layer1_evaluate.py` | Layer 1 evaluation: identifier precision/recall and token-level text fidelity of `controls.csv` against the PDF reference set (`../layer1_ecc/layer1_text_eval.json`); linking of the English test posts with the baseline and the coordinate-based knowledge base (`../layer1_ecc/linking_comparison.json`) |
 | `layer1_link.py` | Uses `controls.csv` as knowledge base: extraction report, domain-to-ECC mapping, TF-IDF linking of posts to controls |
 | `cybattt_pipeline.py` | Auxiliary experiment on CybAttT: cleaning, inter-annotator agreement of the published labels, classification |
-| `verify_thesis.py`, `thesis_claims.json` | Compares the 170 numbers reported in the thesis with the code output (`results/reconciliation.md`) |
+| `verify_thesis.py`, `thesis_claims.json` | Compares 279 numbers reported in the thesis (main results, robustness tests, CybAttT and Layer 1 evaluation) with the code output (`reconciliation.md`) |
 | `label_tweets_llm.py`, `agreement.py` | Optional annotation helpers; not used for the reported results |
 | `controls.csv` | Layer 1 output: 52 controls and 96 sub-controls |
 
